@@ -116,8 +116,8 @@ void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	check(PlayerInputComponent);
 
 	// Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
 
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
@@ -154,6 +154,8 @@ void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 
 void AMDS_NetworkingCharacter::OnFire()
 {
+	if (CurrentHealth <= 0) return void();
+
 	Server_OnFire();
 
 	// try and play the sound if specified
@@ -280,6 +282,8 @@ void AMDS_NetworkingCharacter::EndTouch(const ETouchIndex::Type FingerIndex, con
 
 void AMDS_NetworkingCharacter::MoveForward(float Value)
 {
+	if (CurrentHealth <= 0) return void();
+
 	if (Value != 0.0f)
 	{
 		// add movement in that direction
@@ -289,6 +293,8 @@ void AMDS_NetworkingCharacter::MoveForward(float Value)
 
 void AMDS_NetworkingCharacter::MoveRight(float Value)
 {
+	if (CurrentHealth <= 0) return void();
+
 	if (Value != 0.0f)
 	{
 		// add movement in that direction
@@ -296,8 +302,26 @@ void AMDS_NetworkingCharacter::MoveRight(float Value)
 	}
 }
 
+void AMDS_NetworkingCharacter::Jump()
+{
+	if (CurrentHealth <= 0) return void();
+
+	bPressedJump = true;
+	JumpKeyHoldTime = 0.0f;
+}
+
+void AMDS_NetworkingCharacter::StopJumping()
+{
+	if (CurrentHealth <= 0) return void();
+
+	bPressedJump = false;
+	ResetJumpState();
+}
+
 void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
 {
+	if (CurrentHealth <= 0) return void();
+
 	// calculate delta for this frame from the rate information
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
@@ -310,6 +334,8 @@ void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
 
 bool AMDS_NetworkingCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
 {
+	if (CurrentHealth <= 0) return false;
+
 	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
 	{
 		PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AMDS_NetworkingCharacter::BeginTouch);
