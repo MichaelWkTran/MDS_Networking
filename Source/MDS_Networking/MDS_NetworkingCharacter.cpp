@@ -11,6 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "DrawDebugHelpers.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -151,6 +152,64 @@ void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 
 	DOREPLIFETIME(AMDS_NetworkingCharacter, CurrentHealth);
 }
+
+struct stMove
+{
+	float fDeltatime;
+	float fThrottle;
+	float fSteering;
+	float fCurrentTime;
+};
+
+/*void AMDS_NetworkingCharacter::Tick(float _fDeltatime)
+{
+	Super::Tick(_fDeltatime);
+
+	auto GetEnumText = [](ENetRole _Role)
+	{
+		switch (_Role)
+		{
+		case ROLE_None:
+			return "None";
+		case ROLE_SimulatedProxy:
+			return "SimulatedProxy";
+		case ROLE_AutonomousProxy:
+			return "AutonomousProxy";
+		case ROLE_Authority:
+			return "Authority";
+		default:
+			return "ERROR";
+		}
+	};
+
+	DrawDebugString
+	(
+		GetWorld(),
+		FVector(0.0f, 0.0f, 100.0f),
+		GetEnumText(GetLocalRole()),
+		this,
+		FColor::White,
+		_fDeltatime
+	);
+
+	if (Role == ROLE_AutonomousProxy)
+	{
+		stMove move = CreateMove(_fDeltatime);
+		SimulateMove(move);
+
+		Moves.Add(move);
+		Server_SendMove(move);
+	}
+}
+
+void AMDS_NetworkingCharacter::Server_SendMove_Implementation(FGoKartMove _Move)
+{
+	SimulateMove(_Move);
+
+	ServerState.LastMove = _Move;
+	ServerState.Transform = GetActorTransform();
+	ServerState.Velocity = velocity;
+}*/
 
 void AMDS_NetworkingCharacter::OnFire()
 {

@@ -96,6 +96,10 @@ public:
 
 protected:
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;
+	//virtual void Tick(float _fDeltatime) override;
+	//
+	//UFUNCTION(Server, Reliable)
+	//void Server_SendMove(FGoKartMove _Move);
 
 	/** Fires a projectile. */
 	void OnFire();
