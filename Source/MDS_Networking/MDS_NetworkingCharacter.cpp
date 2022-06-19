@@ -15,9 +15,6 @@
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
-//////////////////////////////////////////////////////////////////////////
-// AMDS_NetworkingCharacter
-
 AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 {
 	CurrentHealth = 100.0f;
@@ -87,7 +84,7 @@ AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 	//bUsingMotionControllers = true;
 }
 
-void AMDS_NetworkingCharacter::BeginPlay()
+/*Virtual*/ void AMDS_NetworkingCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
@@ -108,51 +105,6 @@ void AMDS_NetworkingCharacter::BeginPlay()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
-
-void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
-{
-	// set up gameplay key bindings
-	check(PlayerInputComponent);
-
-	// Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
-
-	// Bind fire event
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
-
-	// Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
-
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMDS_NetworkingCharacter::OnResetVR);
-
-	// Bind movement events
-	PlayerInputComponent->BindAxis("MoveForward", this, &AMDS_NetworkingCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AMDS_NetworkingCharacter::MoveRight);
-
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AMDS_NetworkingCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AMDS_NetworkingCharacter::LookUpAtRate);
-}
-
-void AMDS_NetworkingCharacter::OnRep_CurrentHealth()
-{
-
-}
-
-void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(AMDS_NetworkingCharacter, CurrentHealth);
-}
-
 struct stMove
 {
 	float fDeltatime;
@@ -161,7 +113,7 @@ struct stMove
 	float fCurrentTime;
 };
 
-/*void AMDS_NetworkingCharacter::Tick(float _fDeltatime)
+/*Virtual*/ void AMDS_NetworkingCharacter::Tick(float _fDeltatime)
 {
 	Super::Tick(_fDeltatime);
 
@@ -194,7 +146,7 @@ struct stMove
 
 	if (Role == ROLE_AutonomousProxy)
 	{
-		stMove move = CreateMove(_fDeltatime);
+		stMove move = stMove{ _fDeltatime };
 		SimulateMove(move);
 
 		Moves.Add(move);
@@ -202,14 +154,103 @@ struct stMove
 	}
 }
 
-void AMDS_NetworkingCharacter::Server_SendMove_Implementation(FGoKartMove _Move)
+void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
-	SimulateMove(_Move);
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	ServerState.LastMove = _Move;
-	ServerState.Transform = GetActorTransform();
-	ServerState.Velocity = velocity;
-}*/
+	DOREPLIFETIME(AMDS_NetworkingCharacter, CurrentHealth);
+}
+
+void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+{
+	// set up gameplay key bindings
+	check(PlayerInputComponent);
+
+	// Bind jump events
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
+
+	// Bind fire event
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
+
+	// Enable touchscreen input
+	EnableTouchscreenMovement(PlayerInputComponent);
+
+	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMDS_NetworkingCharacter::OnResetVR);
+
+	// Bind movement events
+	PlayerInputComponent->BindAxis("MoveForward", this, &AMDS_NetworkingCharacter::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AMDS_NetworkingCharacter::MoveRight);
+
+	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
+	// "turn" handles devices that provide an absolute delta, such as a mouse.
+	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
+	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("TurnRate", this, &AMDS_NetworkingCharacter::TurnAtRate);
+	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("LookUpRate", this, &AMDS_NetworkingCharacter::LookUpAtRate);
+}
+
+//void AMDS_NetworkingCharacter::Server_SendMove_Implementation(FGoKartMove _Move)
+//{
+//	SimulateMove(_Move);
+//
+//	ServerState.LastMove = _Move;
+//	ServerState.Transform = GetActorTransform();
+//	ServerState.Velocity = velocity;
+//}
+
+void AMDS_NetworkingCharacter::MoveForward(float Value)
+{
+	if (CurrentHealth <= 0) return void();
+
+	if (Value != 0.0f)
+	{
+		// add movement in that direction
+		AddMovementInput(GetActorForwardVector(), Value);
+	}
+}
+
+void AMDS_NetworkingCharacter::MoveRight(float Value)
+{
+	if (CurrentHealth <= 0) return void();
+
+	if (Value != 0.0f)
+	{
+		// add movement in that direction
+		AddMovementInput(GetActorRightVector(), Value);
+	}
+}
+
+void AMDS_NetworkingCharacter::Jump()
+{
+	if (CurrentHealth <= 0) return void();
+
+	bPressedJump = true;
+	JumpKeyHoldTime = 0.0f;
+}
+
+void AMDS_NetworkingCharacter::StopJumping()
+{
+	if (CurrentHealth <= 0) return void();
+
+	bPressedJump = false;
+	ResetJumpState();
+}
+
+void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
+{
+	if (CurrentHealth <= 0) return void();
+
+	// calculate delta for this frame from the rate information
+	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+}
+
+void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
+{
+	// calculate delta for this frame from the rate information
+	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+}
 
 void AMDS_NetworkingCharacter::OnFire()
 {
@@ -339,58 +380,6 @@ void AMDS_NetworkingCharacter::EndTouch(const ETouchIndex::Type FingerIndex, con
 //	}
 //}
 
-void AMDS_NetworkingCharacter::MoveForward(float Value)
-{
-	if (CurrentHealth <= 0) return void();
-
-	if (Value != 0.0f)
-	{
-		// add movement in that direction
-		AddMovementInput(GetActorForwardVector(), Value);
-	}
-}
-
-void AMDS_NetworkingCharacter::MoveRight(float Value)
-{
-	if (CurrentHealth <= 0) return void();
-
-	if (Value != 0.0f)
-	{
-		// add movement in that direction
-		AddMovementInput(GetActorRightVector(), Value);
-	}
-}
-
-void AMDS_NetworkingCharacter::Jump()
-{
-	if (CurrentHealth <= 0) return void();
-
-	bPressedJump = true;
-	JumpKeyHoldTime = 0.0f;
-}
-
-void AMDS_NetworkingCharacter::StopJumping()
-{
-	if (CurrentHealth <= 0) return void();
-
-	bPressedJump = false;
-	ResetJumpState();
-}
-
-void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
-{
-	if (CurrentHealth <= 0) return void();
-
-	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
-}
-
-void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
-{
-	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
-}
-
 bool AMDS_NetworkingCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
 {
 	if (CurrentHealth <= 0) return false;
@@ -406,4 +395,9 @@ bool AMDS_NetworkingCharacter::EnableTouchscreenMovement(class UInputComponent* 
 	}
 
 	return false;
+}
+
+void AMDS_NetworkingCharacter::OnRep_CurrentHealth()
+{
+
 }
