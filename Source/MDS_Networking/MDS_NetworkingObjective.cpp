@@ -16,8 +16,7 @@ AMDS_NetworkingObjective::AMDS_NetworkingObjective()
 	pSphereComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	pSphereComp->SetCollisionResponseToAllChannels(ECR_Ignore);
 	pSphereComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
-	pSphereComp->SetupAttachment(pMeshComp); 
-
+	pSphereComp->SetupAttachment(pMeshComp);
 }
 
 void AMDS_NetworkingObjective::BeginPlay()
