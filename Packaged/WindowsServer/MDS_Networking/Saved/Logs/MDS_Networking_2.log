@@ -1,0 +1,884 @@
+﻿Log file open, 06/21/22 17:21:12
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsServer.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsServer.pak.
+LogPakFile: PakFile PrimaryIndexSize=24562
+LogPakFile: PakFile PathHashIndexSize=46619
+LogPakFile: PakFile FullDirectoryIndexSize=60105
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsServer.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsServer.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000032
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 9 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.089257
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +12:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin OnlineSubsystemSteam
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin SteamShared
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin OpenImageDenoise
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin OpenXREyeTracker
+LogPluginManager: Mounting plugin OpenXR
+LogPluginManager: Mounting plugin OpenXRHandTracking
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogSteamShared: Display: Loading Steam SDK 1.51
+LogSteamShared: Steam SDK Loaded!
+LogOnline: OSS: Creating online subsystem instance for: Steam
+LogSteamShared: Warning: Steam Dedicated Server API failed to initialize.
+LogOnline: STEAM: [AppId: 480] Game Server API initialized 0
+LogOnline: Warning: STEAM: Failed to initialize Steam, this could be due to a Steam server and client running on the same machine. Try running with -NOSTEAM on the cmdline to disable.
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogOnline: Warning: STEAM: Steam API failed to initialize!
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogOnline: OSS: Unable to create OnlineSubsystem module Steam
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: Intel(R) HD Graphics 630
+LogInit: Compiled (64-bit): Jun 19 2022 22:29:52
+LogInit: Compiled with Visual C++: 19.29.30145.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  -log
+LogInit: Base Directory: D:/Projects/MDS_Networking/Packaged/WindowsServer/MDS_Networking/Binaries/Win64/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: false
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2022.06.21-05.21.16:462][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2022.06.21-05.21.16:483][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.06.21-05.21.16:491][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2022.06.21-05.21.16:492][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:497][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.06.21-05.21.16:499][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:499][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:500][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.06.21-05.21.16:500][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.06.21-05.21.16:501][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.06.21-05.21.16:506][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.06.21-05.21.16:512][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.06.21-05.21.16:513][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.06.21-05.21.16:518][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.06.21-05.21.16:519][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.06.21-05.21.16:520][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.06.21-05.21.16:521][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.06.21-05.21.16:522][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.06.21-05.21.16:522][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.06.21-05.21.16:523][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.06.21-05.21.16:524][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.06.21-05.21.16:524][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:525][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.06.21-05.21.16:525][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.06.21-05.21.16:526][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.06.21-05.21.16:526][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.06.21-05.21.16:527][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.06.21-05.21.16:527][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.06.21-05.21.16:528][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.06.21-05.21.16:528][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.06.21-05.21.16:529][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.06.21-05.21.16:529][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.06.21-05.21.16:530][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.06.21-05.21.16:530][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.06.21-05.21.16:531][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.06.21-05.21.16:531][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.06.21-05.21.16:532][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:532][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:533][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.06.21-05.21.16:533][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.06.21-05.21.16:534][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:538][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.06.21-05.21.16:549][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:552][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.06.21-05.21.16:553][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.06.21-05.21.16:554][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.06.21-05.21.16:554][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.06.21-05.21.16:555][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.06.21-05.21.16:555][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.06.21-05.21.16:556][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.06.21-05.21.16:557][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.06.21-05.21.16:557][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.06.21-05.21.16:558][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.06.21-05.21.16:558][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.06.21-05.21.16:559][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.06.21-05.21.16:559][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.06.21-05.21.16:560][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.06.21-05.21.16:560][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.06.21-05.21.16:561][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.06.21-05.21.16:561][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.06.21-05.21.16:562][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.06.21-05.21.16:562][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:563][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.06.21-05.21.16:563][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.06.21-05.21.16:564][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.06.21-05.21.16:564][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.06.21-05.21.16:565][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.06.21-05.21.16:565][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.06.21-05.21.16:566][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.06.21-05.21.16:581][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.06.21-05.21.16:584][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.06.21-05.21.16:584][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.06.21-05.21.16:587][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.06.21-05.21.16:587][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.06.21-05.21.16:588][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.06.21-05.21.16:588][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.06.21-05.21.16:589][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.06.21-05.21.16:590][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.06.21-05.21.16:590][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.06.21-05.21.16:591][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.06.21-05.21.16:592][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.06.21-05.21.16:592][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.06.21-05.21.16:593][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.06.21-05.21.16:593][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.06.21-05.21.16:594][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.06.21-05.21.16:594][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.06.21-05.21.16:595][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.06.21-05.21.16:595][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.06.21-05.21.16:596][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.06.21-05.21.16:597][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.06.21-05.21.16:597][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.06.21-05.21.16:598][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.06.21-05.21.16:613][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:613][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.06.21-05.21.16:615][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.06.21-05.21.16:615][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.06.21-05.21.16:616][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.06.21-05.21.16:616][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.06.21-05.21.16:617][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.06.21-05.21.16:618][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.06.21-05.21.16:621][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.06.21-05.21.16:623][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.06.21-05.21.16:623][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:624][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.06.21-05.21.16:624][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.06.21-05.21.16:625][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.06.21-05.21.16:625][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.06.21-05.21.16:626][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.06.21-05.21.16:626][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.06.21-05.21.16:627][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.06.21-05.21.16:627][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.06.21-05.21.16:628][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.06.21-05.21.16:628][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.06.21-05.21.16:629][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.06.21-05.21.16:640][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.06.21-05.21.16:641][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.06.21-05.21.16:643][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.06.21-05.21.16:643][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.06.21-05.21.16:644][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.06.21-05.21.16:645][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.06.21-05.21.16:645][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.06.21-05.21.16:646][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.06.21-05.21.16:647][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.06.21-05.21.16:647][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.06.21-05.21.16:648][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.06.21-05.21.16:648][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.06.21-05.21.16:649][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.06.21-05.21.16:649][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.06.21-05.21.16:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.06.21-05.21.16:651][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.06.21-05.21.16:655][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.06.21-05.21.16:655][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.06.21-05.21.16:656][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:656][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.06.21-05.21.16:656][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.06.21-05.21.16:657][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:657][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.06.21-05.21.16:658][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.06.21-05.21.16:658][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.06.21-05.21.16:659][  0]LogInit: Selected Device Profile: [WindowsServer]
+[2022.06.21-05.21.16:659][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsServer]
+[2022.06.21-05.21.16:660][  0]LogHAL: Display: Platform has ~ 16 GB [17059516416 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.06.21-05.21.16:673][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2022.06.21-05.21.16:674][  0]LogInit: Going up to parent DeviceProfile []
+[2022.06.21-05.21.16:675][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:676][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.06.21-05.21.16:677][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.06.21-05.21.16:678][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:678][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.06.21-05.21.16:679][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:679][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.06.21-05.21.16:680][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.06.21-05.21.16:681][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.06.21-05.21.16:681][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.06.21-05.21.16:682][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.06.21-05.21.16:682][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.06.21-05.21.16:683][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.06.21-05.21.16:683][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.06.21-05.21.16:684][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.06.21-05.21.16:688][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.06.21-05.21.16:689][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.06.21-05.21.16:689][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.06.21-05.21.16:690][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.06.21-05.21.16:690][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.06.21-05.21.16:691][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.06.21-05.21.16:691][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.06.21-05.21.16:692][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.06.21-05.21.16:705][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.06.21-05.21.16:707][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:707][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.06.21-05.21.16:708][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.06.21-05.21.16:709][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.06.21-05.21.16:709][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.06.21-05.21.16:710][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.06.21-05.21.16:710][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.06.21-05.21.16:711][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.06.21-05.21.16:712][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.06.21-05.21.16:712][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.06.21-05.21.16:713][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.06.21-05.21.16:713][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.06.21-05.21.16:714][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.06.21-05.21.16:714][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.06.21-05.21.16:715][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.06.21-05.21.16:715][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.06.21-05.21.16:716][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.06.21-05.21.16:716][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.06.21-05.21.16:717][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.06.21-05.21.16:717][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.06.21-05.21.16:722][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.06.21-05.21.16:722][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.06.21-05.21.16:723][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.06.21-05.21.16:723][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.06.21-05.21.16:724][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.06.21-05.21.16:737][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.06.21-05.21.16:738][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.06.21-05.21.16:740][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.06.21-05.21.16:742][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.06.21-05.21.16:742][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.06.21-05.21.16:743][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.06.21-05.21.16:743][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:744][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.06.21-05.21.16:746][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.06.21-05.21.16:746][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.06.21-05.21.16:747][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.06.21-05.21.16:747][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.06.21-05.21.16:748][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.06.21-05.21.16:748][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.06.21-05.21.16:749][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.06.21-05.21.16:749][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.06.21-05.21.16:750][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:751][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.06.21-05.21.16:752][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.06.21-05.21.16:755][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.06.21-05.21.16:765][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.06.21-05.21.16:765][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.06.21-05.21.16:768][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.06.21-05.21.16:769][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.06.21-05.21.16:770][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.06.21-05.21.16:771][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.06.21-05.21.16:771][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.06.21-05.21.16:774][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.06.21-05.21.16:776][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.06.21-05.21.16:779][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.06.21-05.21.16:779][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.06.21-05.21.16:784][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.06.21-05.21.16:791][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.06.21-05.21.16:829][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.06.21-05.21.16:854][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.06.21-05.21.16:866][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.06.21-05.21.16:886][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.06.21-05.21.16:893][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.06.21-05.21.16:899][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.06.21-05.21.16:900][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.06.21-05.21.16:900][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.06.21-05.21.16:901][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.06.21-05.21.16:901][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.06.21-05.21.16:902][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.06.21-05.21.16:902][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.06.21-05.21.16:903][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.06.21-05.21.16:904][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:904][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.06.21-05.21.16:905][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.06.21-05.21.16:905][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsServer/Scalability.ini]
+[2022.06.21-05.21.16:905][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.06.21-05.21.16:907][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.06.21-05.21.16:907][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.06.21-05.21.16:907][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.06.21-05.21.16:907][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.06.21-05.21.16:908][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.06.21-05.21.16:908][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.06.21-05.21.16:908][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../MDS_Networking/Saved/Config/WindowsServer/Engine.ini]
+[2022.06.21-05.21.16:909][  0]LogInit: Computer: LAPTOP-A0JU3L4M
+[2022.06.21-05.21.16:922][  0]LogInit: User: micha
+[2022.06.21-05.21.16:922][  0]LogInit: CPU Page size=4096, Cores=4
+[2022.06.21-05.21.16:924][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.06.21-05.21.16:924][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.06.21-05.21.16:925][  0]LogMemory: Platform Memory Stats for WindowsServer
+[2022.06.21-05.21.16:925][  0]LogMemory: Process Physical Memory: 108.66 MB used, 108.67 MB peak
+[2022.06.21-05.21.16:926][  0]LogMemory: Process Virtual Memory: 88.80 MB used, 88.80 MB peak
+[2022.06.21-05.21.16:926][  0]LogMemory: Physical Memory: 10902.05 MB used,  5367.18 MB free, 16269.22 MB total
+[2022.06.21-05.21.16:927][  0]LogMemory: Virtual Memory: 134214048.00 MB used,  3679.17 MB free, 134217728.00 MB total
+[2022.06.21-05.21.16:930][  0]LogWindows: WindowsPlatformFeatures disabled or dedicated server build
+[2022.06.21-05.21.16:949][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.06.21-05.21.16:950][  0]LogInit: Using OS detected language (en-US).
+[2022.06.21-05.21.16:954][  0]LogInit: Using OS detected locale (en-NZ).
+[2022.06.21-05.21.16:955][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.06.21-05.21.16:983][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.06.21-05.21.16:984][  0]LogODSC: ODSC Thread active.
+[2022.06.21-05.21.16:993][  0]LogInit: Using OS detected language (en-US).
+[2022.06.21-05.21.16:993][  0]LogInit: Using OS detected locale (en-NZ).
+[2022.06.21-05.21.16:994][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.06.21-05.21.16:994][  0]LogTextLocalizationManager: No localization for 'en-NZ' exists, so 'en' will be used for the locale.
+[2022.06.21-05.21.16:996][  0]LogAssetRegistry: FAssetRegistry took 0.0008 seconds to start up
+[2022.06.21-05.21.17:081][  0]LogTextLocalizationManager: Compacting localization data took   0.92ms
+[2022.06.21-05.21.17:082][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.06.21-05.21.17:090][  0]LogPackageLocalizationCache: Processed 26 localized package path(s) for 1 prioritized culture(s) in 0.000099 seconds
+[2022.06.21-05.21.17:090][  0]LogPakFile: New pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsServer.pak added to pak precacher.
+[2022.06.21-05.21.17:093][  0]LogInit: Selected Device Profile: [WindowsServer]
+[2022.06.21-05.21.17:093][  0]LogInit: Active device profile: [000001C03FFB4D80][000001C03C00DB70 49] WindowsServer
+[2022.06.21-05.21.17:094][  0]LogInit: Profiles: [000001C03FFB4F00][000001C03E116DC0 49] Windows, [000001C03FFB4D80][000001C03C00DB70 49] WindowsServer, 
+[2022.06.21-05.21.17:112][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2022.06.21-05.21.17:125][  0]LogNetVersion: MDS_Networking 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 4188271328)
+[2022.06.21-05.21.17:172][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.06.21-05.21.17:172][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.06.21-05.21.17:178][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.06.21-05.21.17:198][  0]LogActor: Warning: SetReplicates called on non-initialized actor Default__MDS_NetworkingProjectile. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.06.21-05.21.17:201][  0]LogActor: Warning: SetReplicates called on non-initialized actor Default__FirstPersonProjectile_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.06.21-05.21.17:213][  0]LogTemp: Warning: [MDS_NetworkingPlayerController] found Subsystem NULL
+[2022.06.21-05.21.17:292][  0]LogUObjectArray: 15947 objects as part of root set at end of initial load.
+[2022.06.21-05.21.17:292][  0]LogUObjectAllocator: 3311688 out of 0 bytes used by permanent object pool.
+[2022.06.21-05.21.17:312][  0]LogUObjectArray: CloseDisregardForGC: 15947/0 objects in disregard for GC pool
+[2022.06.21-05.21.17:327][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: EBA4C5CF47B9C65C5F389A9E9D07E825 | Instance: C0C20DCE4176D17947F7998DA850CDD6 (LAPTOP-A0JU3L4M-18900).
+[2022.06.21-05.21.17:354][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.06.21-05.21.17:365][  0]LogOcInput: OculusInput pre-init called
+[2022.06.21-05.21.17:367][  0]LogEngine: Initializing Engine...
+[2022.06.21-05.21.17:383][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.06.21-05.21.17:409][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.06.21-05.21.17:409][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.06.21-05.21.17:410][  0]LogInit: Texture streaming: Disabled
+[2022.06.21-05.21.17:428][  0]LogInit: Display: Game Engine Initialized.
+[2022.06.21-05.21.17:428][  0]LogInit: Display: Starting Game.
+[2022.06.21-05.21.17:433][  0]LogNet: Browse: /Game/Maps/FirstPersonExampleMap?Name=Player
+[2022.06.21-05.21.17:440][  0]LogLoad: LoadMap: /Game/Maps/FirstPersonExampleMap?Name=Player
+[2022.06.21-05.21.17:441][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2022.06.21-05.21.17:450][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.06.21-05.21.17:456][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2022.06.21-05.21.17:514][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2022.06.21-05.21.17:520][  0]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2022.06.21-05.21.17:524][  0]LogOnline: OSS: Creating online subsystem instance for: Steam
+[2022.06.21-05.21.17:576][  0]LogSteamShared: Warning: Steam Dedicated Server API failed to initialize.
+[2022.06.21-05.21.17:580][  0]LogOnline: STEAM: [AppId: 480] Game Server API initialized 0
+[2022.06.21-05.21.17:580][  0]LogOnline: Warning: STEAM: Failed to initialize Steam, this could be due to a Steam server and client running on the same machine. Try running with -NOSTEAM on the cmdline to disable.
+[2022.06.21-05.21.17:587][  0]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2022.06.21-05.21.17:588][  0]LogOnline: Warning: STEAM: Steam API failed to initialize!
+[2022.06.21-05.21.17:589][  0]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2022.06.21-05.21.17:589][  0]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2022.06.21-05.21.17:589][  0]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2022.06.21-05.21.17:590][  0]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2022.06.21-05.21.17:591][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 7777
+[2022.06.21-05.21.17:591][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.17:592][  0]LogNet: GameNetDriver IpNetDriver_2147482567 IpNetDriver listening on port 7777
+[2022.06.21-05.21.17:593][  0]LogWorld: Bringing World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 30) at 2022.06.21-17.21.17
+[2022.06.21-05.21.17:593][  0]LogWorld: Bringing up level for play took: 0.000847
+[2022.06.21-05.21.17:594][  0]LogLoad: Took 0.154580 seconds to LoadMap(/Game/Maps/FirstPersonExampleMap)
+[2022.06.21-05.21.17:594][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=209740, PathHashSize=16, EntriesSize=32752, TotalSize=242508
+[2022.06.21-05.21.17:595][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.06.21-05.21.17:595][  0]LogLoad: (Engine Initialization) Total time: 4.97 seconds
+[2022.06.21-05.21.32:388][444]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52520
+[2022.06.21-05.21.32:388][444]LogHandshake: SendConnectChallenge. Timestamp: 14.790968, Cookie: 156253236237133179185203212110232216249247247184011193051102
+[2022.06.21-05.21.32:455][446]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52520
+[2022.06.21-05.21.32:455][446]LogHandshake: SendChallengeAck. InCookie: 156253236237133179185203212110232216249247247184011193051102
+[2022.06.21-05.21.32:456][446]LogNet: Server accepting post-challenge connection from: 127.0.0.1:52520
+[2022.06.21-05.21.32:457][446]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.32:457][446]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:32, [UNetConnection] RemoteAddr: 127.0.0.1:52520, Name: IpConnection_2147482560, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.32:457][446]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:52520, Name: IpConnection_2147482560, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.32:488][447]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.32:488][447]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.32:496][447]LogNet: This platform little endian=1
+[2022.06.21-05.21.32:513][447]LogNetVersion: MDS_Networking 1.0.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 248626056)
+[2022.06.21-05.21.32:514][447]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.32:515][447]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:52520, Name: IpConnection_2147482560, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.32
+[2022.06.21-05.21.32:516][447]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:52520, Name: IpConnection_2147482560, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.32:521][448]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:52520, Name: IpConnection_2147482560, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.32:588][450]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52520
+[2022.06.21-05.21.34:012][493]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51423
+[2022.06.21-05.21.34:012][493]LogHandshake: SendConnectChallenge. Timestamp: 16.414992, Cookie: 040103052018204130021017217250172201122005140206020143091247
+[2022.06.21-05.21.34:046][494]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51423
+[2022.06.21-05.21.34:046][494]LogHandshake: SendChallengeAck. InCookie: 040103052018204130021017217250172201122005140206020143091247
+[2022.06.21-05.21.34:046][494]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51423
+[2022.06.21-05.21.34:061][494]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.34:074][494]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:34, [UNetConnection] RemoteAddr: 127.0.0.1:51423, Name: IpConnection_2147482556, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.34:079][494]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51423, Name: IpConnection_2147482556, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.34:080][494]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.34:081][494]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.34:083][494]LogNet: This platform little endian=1
+[2022.06.21-05.21.34:084][494]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.34:092][494]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51423, Name: IpConnection_2147482556, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.34
+[2022.06.21-05.21.34:104][494]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51423, Name: IpConnection_2147482556, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.34:105][494]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:51423, Name: IpConnection_2147482556, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.35:300][531]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51424
+[2022.06.21-05.21.35:300][531]LogHandshake: SendConnectChallenge. Timestamp: 17.702973, Cookie: 020143185000061252209114075243137092025110026118032234202247
+[2022.06.21-05.21.35:333][532]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51424
+[2022.06.21-05.21.35:333][532]LogHandshake: SendChallengeAck. InCookie: 020143185000061252209114075243137092025110026118032234202247
+[2022.06.21-05.21.35:344][532]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51424
+[2022.06.21-05.21.35:350][532]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.35:362][532]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:35, [UNetConnection] RemoteAddr: 127.0.0.1:51424, Name: IpConnection_2147482552, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.35:364][532]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51424, Name: IpConnection_2147482552, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.35:365][532]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.35:366][532]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.35:366][532]LogNet: This platform little endian=1
+[2022.06.21-05.21.35:367][532]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.35:368][532]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51424, Name: IpConnection_2147482552, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.35
+[2022.06.21-05.21.35:369][532]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51424, Name: IpConnection_2147482552, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.35:369][533]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:51424, Name: IpConnection_2147482552, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.35:402][534]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51424
+[2022.06.21-05.21.36:464][566]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:60286
+[2022.06.21-05.21.36:464][566]LogHandshake: SendConnectChallenge. Timestamp: 18.867283, Cookie: 023097239100243079010080219151144194149013145044150200169233
+[2022.06.21-05.21.36:498][567]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:60286
+[2022.06.21-05.21.36:498][567]LogHandshake: SendChallengeAck. InCookie: 023097239100243079010080219151144194149013145044150200169233
+[2022.06.21-05.21.36:510][567]LogNet: Server accepting post-challenge connection from: 127.0.0.1:60286
+[2022.06.21-05.21.36:518][567]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.36:528][567]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:36, [UNetConnection] RemoteAddr: 127.0.0.1:60286, Name: IpConnection_2147482548, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.36:530][567]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:60286, Name: IpConnection_2147482548, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.36:531][567]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.36:532][567]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.36:533][567]LogNet: This platform little endian=1
+[2022.06.21-05.21.36:534][567]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.36:535][567]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:60286, Name: IpConnection_2147482548, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.36
+[2022.06.21-05.21.36:536][567]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:60286, Name: IpConnection_2147482548, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.36:537][567]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:60286, Name: IpConnection_2147482548, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.37:632][601]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:60287
+[2022.06.21-05.21.37:632][601]LogHandshake: SendConnectChallenge. Timestamp: 20.034736, Cookie: 073199120006047185145071163178060213096041234192176148238186
+[2022.06.21-05.21.37:664][602]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:60287
+[2022.06.21-05.21.37:664][602]LogHandshake: SendChallengeAck. InCookie: 073199120006047185145071163178060213096041234192176148238186
+[2022.06.21-05.21.37:690][602]LogNet: Server accepting post-challenge connection from: 127.0.0.1:60287
+[2022.06.21-05.21.37:695][602]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.37:695][602]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:37, [UNetConnection] RemoteAddr: 127.0.0.1:60287, Name: IpConnection_2147482544, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.37:709][602]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:60287, Name: IpConnection_2147482544, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.37:710][602]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.37:718][602]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.37:726][602]LogNet: This platform little endian=1
+[2022.06.21-05.21.37:727][602]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.37:727][602]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:60287, Name: IpConnection_2147482544, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.37
+[2022.06.21-05.21.37:728][602]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:60287, Name: IpConnection_2147482544, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.37:730][602]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:60287, Name: IpConnection_2147482544, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.38:822][636]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54663
+[2022.06.21-05.21.38:822][636]LogHandshake: SendConnectChallenge. Timestamp: 21.225521, Cookie: 210215046238142157011136123249084234250056093102223004057160
+[2022.06.21-05.21.38:855][637]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54663
+[2022.06.21-05.21.38:855][637]LogHandshake: SendChallengeAck. InCookie: 210215046238142157011136123249084234250056093102223004057160
+[2022.06.21-05.21.38:856][637]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54663
+[2022.06.21-05.21.38:871][637]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.38:878][637]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:38, [UNetConnection] RemoteAddr: 127.0.0.1:54663, Name: IpConnection_2147482540, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.38:878][637]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54663, Name: IpConnection_2147482540, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.38:893][637]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.38:894][637]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.38:895][637]LogNet: This platform little endian=1
+[2022.06.21-05.21.38:895][637]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.38:897][637]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54663, Name: IpConnection_2147482540, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.38
+[2022.06.21-05.21.38:913][637]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54663, Name: IpConnection_2147482540, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.38:916][637]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:54663, Name: IpConnection_2147482540, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.40:008][671]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54664
+[2022.06.21-05.21.40:008][671]LogHandshake: SendConnectChallenge. Timestamp: 22.411118, Cookie: 115234022218208223133043048141248223180233115110022009049166
+[2022.06.21-05.21.40:041][672]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54664
+[2022.06.21-05.21.40:041][672]LogHandshake: SendChallengeAck. InCookie: 115234022218208223133043048141248223180233115110022009049166
+[2022.06.21-05.21.40:042][672]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54664
+[2022.06.21-05.21.40:057][672]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.40:076][672]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:40, [UNetConnection] RemoteAddr: 127.0.0.1:54664, Name: IpConnection_2147482536, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.40:077][672]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54664, Name: IpConnection_2147482536, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.40:077][672]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.40:078][672]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.40:087][672]LogNet: This platform little endian=1
+[2022.06.21-05.21.40:094][672]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.40:095][672]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54664, Name: IpConnection_2147482536, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.40
+[2022.06.21-05.21.40:095][672]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54664, Name: IpConnection_2147482536, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.40:097][672]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:54664, Name: IpConnection_2147482536, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.41:193][706]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51711
+[2022.06.21-05.21.41:193][706]LogHandshake: SendConnectChallenge. Timestamp: 23.596619, Cookie: 088164189127029023245230010141236228108076049185183191200007
+[2022.06.21-05.21.41:226][707]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51711
+[2022.06.21-05.21.41:226][707]LogHandshake: SendChallengeAck. InCookie: 088164189127029023245230010141236228108076049185183191200007
+[2022.06.21-05.21.41:227][707]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51711
+[2022.06.21-05.21.41:243][707]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.41:252][707]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:41, [UNetConnection] RemoteAddr: 127.0.0.1:51711, Name: IpConnection_2147482532, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.41:261][707]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51711, Name: IpConnection_2147482532, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.41:263][707]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.41:263][707]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.41:265][707]LogNet: This platform little endian=1
+[2022.06.21-05.21.41:265][707]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.41:266][707]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51711, Name: IpConnection_2147482532, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.41
+[2022.06.21-05.21.41:267][707]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51711, Name: IpConnection_2147482532, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.41:276][707]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:51711, Name: IpConnection_2147482532, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.42:408][742]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51712
+[2022.06.21-05.21.42:408][742]LogHandshake: SendConnectChallenge. Timestamp: 24.810979, Cookie: 033213114162169218179143243037003012083068121044091236217184
+[2022.06.21-05.21.42:441][743]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51712
+[2022.06.21-05.21.42:441][743]LogHandshake: SendChallengeAck. InCookie: 033213114162169218179143243037003012083068121044091236217184
+[2022.06.21-05.21.42:441][743]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51712
+[2022.06.21-05.21.42:458][743]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.42:477][743]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:42, [UNetConnection] RemoteAddr: 127.0.0.1:51712, Name: IpConnection_2147482528, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.42:478][743]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51712, Name: IpConnection_2147482528, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.42:479][743]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.42:480][743]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.42:480][743]LogNet: This platform little endian=1
+[2022.06.21-05.21.42:481][743]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.42:482][743]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51712, Name: IpConnection_2147482528, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.42
+[2022.06.21-05.21.42:490][743]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51712, Name: IpConnection_2147482528, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.42:491][743]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:51712, Name: IpConnection_2147482528, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.43:592][777]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51713
+[2022.06.21-05.21.43:592][777]LogHandshake: SendConnectChallenge. Timestamp: 25.995526, Cookie: 251052161100125011022065064221105179011015193156014157244151
+[2022.06.21-05.21.43:625][778]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51713
+[2022.06.21-05.21.43:625][778]LogHandshake: SendChallengeAck. InCookie: 251052161100125011022065064221105179011015193156014157244151
+[2022.06.21-05.21.43:626][778]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51713
+[2022.06.21-05.21.43:629][778]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.43:644][778]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:43, [UNetConnection] RemoteAddr: 127.0.0.1:51713, Name: IpConnection_2147482524, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.43:661][778]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51713, Name: IpConnection_2147482524, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.43:677][778]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.43:678][778]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.43:679][778]LogNet: This platform little endian=1
+[2022.06.21-05.21.43:681][778]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.43:682][778]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51713, Name: IpConnection_2147482524, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.43
+[2022.06.21-05.21.43:683][778]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51713, Name: IpConnection_2147482524, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.43:684][778]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:51713, Name: IpConnection_2147482524, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.44:810][813]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59146
+[2022.06.21-05.21.44:810][813]LogHandshake: SendConnectChallenge. Timestamp: 27.213725, Cookie: 003149067010026017212035254172133157196238157248004169056002
+[2022.06.21-05.21.44:844][814]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59146
+[2022.06.21-05.21.44:844][814]LogHandshake: SendChallengeAck. InCookie: 003149067010026017212035254172133157196238157248004169056002
+[2022.06.21-05.21.44:845][814]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59146
+[2022.06.21-05.21.44:848][814]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.44:848][814]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:44, [UNetConnection] RemoteAddr: 127.0.0.1:59146, Name: IpConnection_2147482520, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.44:849][814]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59146, Name: IpConnection_2147482520, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.44:878][815]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.44:878][815]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.44:879][815]LogNet: This platform little endian=1
+[2022.06.21-05.21.44:880][815]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.44:880][815]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59146, Name: IpConnection_2147482520, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.44
+[2022.06.21-05.21.44:882][815]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59146, Name: IpConnection_2147482520, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.44:884][815]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:59146, Name: IpConnection_2147482520, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.45:976][848]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59147
+[2022.06.21-05.21.45:976][848]LogHandshake: SendConnectChallenge. Timestamp: 28.378718, Cookie: 117204037228059038051050119206111057080064045070086119044176
+[2022.06.21-05.21.46:009][849]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59147
+[2022.06.21-05.21.46:009][849]LogHandshake: SendChallengeAck. InCookie: 117204037228059038051050119206111057080064045070086119044176
+[2022.06.21-05.21.46:010][849]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59147
+[2022.06.21-05.21.46:012][849]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.46:028][849]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:46, [UNetConnection] RemoteAddr: 127.0.0.1:59147, Name: IpConnection_2147482516, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.46:034][849]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59147, Name: IpConnection_2147482516, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.46:044][849]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.46:053][849]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.46:061][849]LogNet: This platform little endian=1
+[2022.06.21-05.21.46:061][849]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.46:062][849]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59147, Name: IpConnection_2147482516, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.46
+[2022.06.21-05.21.46:063][849]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59147, Name: IpConnection_2147482516, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.46:065][850]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:59147, Name: IpConnection_2147482516, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.46:099][851]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59147
+[2022.06.21-05.21.47:156][883]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49808
+[2022.06.21-05.21.47:156][883]LogHandshake: SendConnectChallenge. Timestamp: 29.559287, Cookie: 153201014162085050239114033223190195191237151188070068004232
+[2022.06.21-05.21.47:189][884]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49808
+[2022.06.21-05.21.47:189][884]LogHandshake: SendChallengeAck. InCookie: 153201014162085050239114033223190195191237151188070068004232
+[2022.06.21-05.21.47:190][884]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49808
+[2022.06.21-05.21.47:204][884]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.47:212][884]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:47, [UNetConnection] RemoteAddr: 127.0.0.1:49808, Name: IpConnection_2147482512, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.47:226][884]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49808, Name: IpConnection_2147482512, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.47:228][884]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.47:244][884]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.47:245][884]LogNet: This platform little endian=1
+[2022.06.21-05.21.47:247][884]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.47:248][884]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49808, Name: IpConnection_2147482512, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.47
+[2022.06.21-05.21.47:249][884]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49808, Name: IpConnection_2147482512, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.47:251][885]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:49808, Name: IpConnection_2147482512, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.48:378][919]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49809
+[2022.06.21-05.21.48:378][919]LogHandshake: SendConnectChallenge. Timestamp: 30.781204, Cookie: 171103076158076079198209121198151241101084111049027167204033
+[2022.06.21-05.21.48:411][920]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49809
+[2022.06.21-05.21.48:411][920]LogHandshake: SendChallengeAck. InCookie: 171103076158076079198209121198151241101084111049027167204033
+[2022.06.21-05.21.48:412][920]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49809
+[2022.06.21-05.21.48:426][920]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.48:444][920]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:48, [UNetConnection] RemoteAddr: 127.0.0.1:49809, Name: IpConnection_2147482508, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.48:449][920]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49809, Name: IpConnection_2147482508, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.48:462][920]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.48:470][920]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.48:477][920]LogNet: This platform little endian=1
+[2022.06.21-05.21.48:478][920]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.48:479][920]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49809, Name: IpConnection_2147482508, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.48
+[2022.06.21-05.21.48:480][920]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49809, Name: IpConnection_2147482508, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.48:482][921]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:49809, Name: IpConnection_2147482508, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.48:516][922]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49809
+[2022.06.21-05.21.49:589][954]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64138
+[2022.06.21-05.21.49:590][954]LogHandshake: SendConnectChallenge. Timestamp: 31.991785, Cookie: 036092156125007189252046028205226141220053008082204228204194
+[2022.06.21-05.21.49:622][955]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64138
+[2022.06.21-05.21.49:622][955]LogHandshake: SendChallengeAck. InCookie: 036092156125007189252046028205226141220053008082204228204194
+[2022.06.21-05.21.49:634][955]LogNet: Server accepting post-challenge connection from: 127.0.0.1:64138
+[2022.06.21-05.21.49:647][955]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.49:689][955]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:49, [UNetConnection] RemoteAddr: 127.0.0.1:64138, Name: IpConnection_2147482504, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.49:700][955]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:64138, Name: IpConnection_2147482504, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.49:770][955]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.49:798][955]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.49:853][955]LogNet: This platform little endian=1
+[2022.06.21-05.21.49:869][955]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.49:877][955]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:64138, Name: IpConnection_2147482504, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.49
+[2022.06.21-05.21.49:904][955]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:64138, Name: IpConnection_2147482504, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.49:938][955]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:64138, Name: IpConnection_2147482504, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.51:042][989]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64139
+[2022.06.21-05.21.51:042][989]LogHandshake: SendConnectChallenge. Timestamp: 33.444733, Cookie: 171250095034171117071192021034184226110003069132098079172225
+[2022.06.21-05.21.51:074][990]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64139
+[2022.06.21-05.21.51:074][990]LogHandshake: SendChallengeAck. InCookie: 171250095034171117071192021034184226110003069132098079172225
+[2022.06.21-05.21.51:075][990]LogNet: Server accepting post-challenge connection from: 127.0.0.1:64139
+[2022.06.21-05.21.51:084][990]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.51:090][990]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:51, [UNetConnection] RemoteAddr: 127.0.0.1:64139, Name: IpConnection_2147482500, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.51:098][990]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:64139, Name: IpConnection_2147482500, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.51:099][990]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.51:100][990]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.51:101][990]LogNet: This platform little endian=1
+[2022.06.21-05.21.51:102][990]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.51:103][990]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:64139, Name: IpConnection_2147482500, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.51
+[2022.06.21-05.21.51:104][990]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:64139, Name: IpConnection_2147482500, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.51:105][990]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:64139, Name: IpConnection_2147482500, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.52:201][ 24]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64140
+[2022.06.21-05.21.52:201][ 24]LogHandshake: SendConnectChallenge. Timestamp: 34.604442, Cookie: 031021055062192169093117117059240253143248158066020066027039
+[2022.06.21-05.21.52:235][ 25]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:64140
+[2022.06.21-05.21.52:235][ 25]LogHandshake: SendChallengeAck. InCookie: 031021055062192169093117117059240253143248158066020066027039
+[2022.06.21-05.21.52:239][ 25]LogNet: Server accepting post-challenge connection from: 127.0.0.1:64140
+[2022.06.21-05.21.52:240][ 25]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.52:241][ 25]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:52, [UNetConnection] RemoteAddr: 127.0.0.1:64140, Name: IpConnection_2147482496, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.52:241][ 25]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:64140, Name: IpConnection_2147482496, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.52:242][ 25]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.52:243][ 25]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.52:243][ 25]LogNet: This platform little endian=1
+[2022.06.21-05.21.52:244][ 25]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.52:246][ 25]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:64140, Name: IpConnection_2147482496, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.52
+[2022.06.21-05.21.52:256][ 25]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:64140, Name: IpConnection_2147482496, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.52:257][ 25]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:64140, Name: IpConnection_2147482496, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.53:360][ 59]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54152
+[2022.06.21-05.21.53:360][ 59]LogHandshake: SendConnectChallenge. Timestamp: 35.763398, Cookie: 002074100231061242001238168183107100242053066247243098139154
+[2022.06.21-05.21.53:394][ 60]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54152
+[2022.06.21-05.21.53:394][ 60]LogHandshake: SendChallengeAck. InCookie: 002074100231061242001238168183107100242053066247243098139154
+[2022.06.21-05.21.53:395][ 60]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54152
+[2022.06.21-05.21.53:406][ 60]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.53:411][ 60]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:53, [UNetConnection] RemoteAddr: 127.0.0.1:54152, Name: IpConnection_2147482492, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.53:421][ 60]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54152, Name: IpConnection_2147482492, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.53:422][ 60]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.53:423][ 60]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.53:424][ 60]LogNet: This platform little endian=1
+[2022.06.21-05.21.53:425][ 60]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.53:426][ 60]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54152, Name: IpConnection_2147482492, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.53
+[2022.06.21-05.21.53:427][ 60]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54152, Name: IpConnection_2147482492, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.53:428][ 61]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:54152, Name: IpConnection_2147482492, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.53:462][ 62]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54152
+[2022.06.21-05.21.54:555][ 95]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62161
+[2022.06.21-05.21.54:555][ 95]LogHandshake: SendConnectChallenge. Timestamp: 36.958366, Cookie: 212089180183065104110198100134034240180024019069028156022232
+[2022.06.21-05.21.54:589][ 96]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62161
+[2022.06.21-05.21.54:589][ 96]LogHandshake: SendChallengeAck. InCookie: 212089180183065104110198100134034240180024019069028156022232
+[2022.06.21-05.21.54:606][ 96]LogNet: Server accepting post-challenge connection from: 127.0.0.1:62161
+[2022.06.21-05.21.54:607][ 96]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.54:608][ 96]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:54, [UNetConnection] RemoteAddr: 127.0.0.1:62161, Name: IpConnection_2147482488, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.54:609][ 96]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:62161, Name: IpConnection_2147482488, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.54:623][ 97]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.54:628][ 97]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.54:628][ 97]LogNet: This platform little endian=1
+[2022.06.21-05.21.54:639][ 97]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.54:640][ 97]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:62161, Name: IpConnection_2147482488, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.54
+[2022.06.21-05.21.54:641][ 97]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:62161, Name: IpConnection_2147482488, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.54:657][ 98]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:62161, Name: IpConnection_2147482488, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.54:657][ 98]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62161
+[2022.06.21-05.21.55:748][131]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49766
+[2022.06.21-05.21.55:748][131]LogHandshake: SendConnectChallenge. Timestamp: 38.151378, Cookie: 008095164011074241247107186074149063016236136161111067176145
+[2022.06.21-05.21.55:782][132]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49766
+[2022.06.21-05.21.55:782][132]LogHandshake: SendChallengeAck. InCookie: 008095164011074241247107186074149063016236136161111067176145
+[2022.06.21-05.21.55:791][132]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49766
+[2022.06.21-05.21.55:810][132]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.55:811][132]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:55, [UNetConnection] RemoteAddr: 127.0.0.1:49766, Name: IpConnection_2147482484, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.55:812][132]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49766, Name: IpConnection_2147482484, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.55:813][132]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.55:813][132]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.55:814][132]LogNet: This platform little endian=1
+[2022.06.21-05.21.55:815][132]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.55:816][132]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49766, Name: IpConnection_2147482484, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.55
+[2022.06.21-05.21.55:817][132]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49766, Name: IpConnection_2147482484, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.55:818][133]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:49766, Name: IpConnection_2147482484, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.55:830][133]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49766
+[2022.06.21-05.21.56:952][167]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49767
+[2022.06.21-05.21.56:952][167]LogHandshake: SendConnectChallenge. Timestamp: 39.355714, Cookie: 141092006028184133242128131251049100050175127231059207095008
+[2022.06.21-05.21.56:987][168]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49767
+[2022.06.21-05.21.56:987][168]LogHandshake: SendChallengeAck. InCookie: 141092006028184133242128131251049100050175127231059207095008
+[2022.06.21-05.21.56:992][168]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49767
+[2022.06.21-05.21.57:001][168]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.57:002][168]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:57, [UNetConnection] RemoteAddr: 127.0.0.1:49767, Name: IpConnection_2147482480, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.57:016][168]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49767, Name: IpConnection_2147482480, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.57:124][170]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.57:125][170]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.57:142][170]LogNet: This platform little endian=1
+[2022.06.21-05.21.57:184][170]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.57:225][170]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49767, Name: IpConnection_2147482480, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.57
+[2022.06.21-05.21.57:277][170]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49767, Name: IpConnection_2147482480, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.57:311][170]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:49767, Name: IpConnection_2147482480, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.21.58:647][211]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55064
+[2022.06.21-05.21.58:648][211]LogHandshake: SendConnectChallenge. Timestamp: 41.050607, Cookie: 068245148030151205001032186251016041249147228251189253146001
+[2022.06.21-05.21.58:683][212]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55064
+[2022.06.21-05.21.58:694][212]LogHandshake: SendChallengeAck. InCookie: 068245148030151205001032186251016041249147228251189253146001
+[2022.06.21-05.21.58:719][212]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55064
+[2022.06.21-05.21.58:789][212]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.21.58:840][212]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:21:58, [UNetConnection] RemoteAddr: 127.0.0.1:55064, Name: IpConnection_2147482476, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.58:856][212]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55064, Name: IpConnection_2147482476, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.58:898][212]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.21.58:922][212]LogNet: Remote platform little endian=1
+[2022.06.21-05.21.58:961][212]LogNet: This platform little endian=1
+[2022.06.21-05.21.59:014][212]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.21.59:044][212]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55064, Name: IpConnection_2147482476, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.21.59
+[2022.06.21-05.21.59:065][212]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55064, Name: IpConnection_2147482476, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.21.59:086][212]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:55064, Name: IpConnection_2147482476, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
+[2022.06.21-05.22.00:340][249]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55065
+[2022.06.21-05.22.00:340][249]LogHandshake: SendConnectChallenge. Timestamp: 42.742697, Cookie: 239085134094157224003067039162183016213054161131227195213000
+[2022.06.21-05.22.00:372][250]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55065
+[2022.06.21-05.22.00:372][250]LogHandshake: SendChallengeAck. InCookie: 239085134094157224003067039162183016213054161131227195213000
+[2022.06.21-05.22.00:374][250]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55065
+[2022.06.21-05.22.00:381][250]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.06.21-05.22.00:383][250]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 06/21/22 17:22:00, [UNetConnection] RemoteAddr: 127.0.0.1:55065, Name: IpConnection_2147482472, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.22.00:388][250]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55065, Name: IpConnection_2147482472, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.22.00:389][250]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2022.06.21-05.22.00:389][250]LogNet: Remote platform little endian=1
+[2022.06.21-05.22.00:390][250]LogNet: This platform little endian=1
+[2022.06.21-05.22.00:391][250]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 248626056, RemoteNetworkVersion: -223516323
+[2022.06.21-05.22.00:392][250]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55065, Name: IpConnection_2147482472, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID, Channels: 2, Time: 2022.06.21-05.22.00
+[2022.06.21-05.22.00:392][250]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55065, Name: IpConnection_2147482472, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.06.21-05.22.00:393][250]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 127.0.0.1:55065, Name: IpConnection_2147482472, Driver: GameNetDriver IpNetDriver_2147482567, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID bPendingDestroy=0 
