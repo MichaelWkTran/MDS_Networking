@@ -144,14 +144,14 @@ struct stMove
 		_fDeltatime
 	);
 
-	if (Role == ROLE_AutonomousProxy)
-	{
-		stMove move = stMove{ _fDeltatime };
-		SimulateMove(move);
-
-		Moves.Add(move);
-		Server_SendMove(move);
-	}
+	//if (Role == ROLE_AutonomousProxy)
+	//{
+	//	stMove move = stMove{ _fDeltatime };
+	//	SimulateMove(move);
+	//
+	//	Moves.Add(move);
+	//	Server_SendMove(move);
+	//}
 }
 
 void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
