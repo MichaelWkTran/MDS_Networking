@@ -9,18 +9,21 @@ class MDS_NETWORKING_API AMDS_NetworkingObjective : public AActor
 {
 	GENERATED_BODY()
 	
-private:
+protected:
+	virtual void BeginPlay() override;
+
 	UPROPERTY(VisibleAnywhere, Category = "Components");
 		class UStaticMeshComponent* pMeshComp;
 	UPROPERTY(VisibleAnywhere, Category = "Components");
 		class USphereComponent* pSphereComp;
 
-protected:
-	virtual void BeginPlay() override;
+	FVector m_vStartLocation;
+	float m_fBounceMagnitude;
+	float m_fBounceFactor;
+	float m_fBounceRate;
 
 public:	
 	AMDS_NetworkingObjective();
 	
-	virtual void Tick(float DeltaTime) override;
-
+	virtual void Tick(float _fDeltaTime) override;
 };

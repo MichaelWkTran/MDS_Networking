@@ -1,22 +1,13 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{C2CF4B04-4F16-4EFD-C8D1-99BC953DD6E0}",
+	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "MDS_Networking",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "OnlineSubsystemSteam",
-			"Enabled": true
+			"LoadingPhase": "Default"
 		}
 	]
 }

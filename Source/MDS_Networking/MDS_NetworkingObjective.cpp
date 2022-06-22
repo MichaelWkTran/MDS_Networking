@@ -17,17 +17,36 @@ AMDS_NetworkingObjective::AMDS_NetworkingObjective()
 	pSphereComp->SetCollisionResponseToAllChannels(ECR_Ignore);
 	pSphereComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	pSphereComp->SetupAttachment(pMeshComp);
+
+	if (HasAuthority())
+	{
+		SetReplicates(true);
+		SetReplicateMovement(true);
+	}
+
+	m_fBounceMagnitude = 10.0f;
+	m_fBounceFactor = 0.0f;
+	m_fBounceRate = 1.0f;
 }
 
 void AMDS_NetworkingObjective::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if (HasAuthority())
+	{
+		m_vStartLocation = GetActorLocation();
+	}
 }
 
-void AMDS_NetworkingObjective::Tick(float DeltaTime)
+void AMDS_NetworkingObjective::Tick(float _fDeltaTime)
 {
-	Super::Tick(DeltaTime);
+	Super::Tick(_fDeltaTime);
 
+	if (HasAuthority())
+	{
+		m_fBounceFactor += _fDeltaTime * m_fBounceRate;
+		while (m_fBounceFactor > 2.0f) m_fBounceFactor -= 2.0f;
+		SetActorLocation(m_vStartLocation + FVector(0.0f, 0.0f, m_fBounceMagnitude * sin(m_fBounceFactor * 2 * PI)));
+	}
 }
-
