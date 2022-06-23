@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #include "MDS_NetworkingCharacter.h"
 #include "MDS_NetworkingProjectile.h"
 #include "Animation/AnimInstance.h"
@@ -17,7 +15,7 @@ DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
 AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 {
-	CurrentHealth = 100.0f;
+	m_fCurrentHealth = 100.0f;
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
@@ -158,7 +156,7 @@ void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(AMDS_NetworkingCharacter, CurrentHealth);
+	DOREPLIFETIME(AMDS_NetworkingCharacter, m_fCurrentHealth);
 }
 
 void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -202,7 +200,7 @@ void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void AMDS_NetworkingCharacter::MoveForward(float Value)
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	if (Value != 0.0f)
 	{
@@ -213,7 +211,7 @@ void AMDS_NetworkingCharacter::MoveForward(float Value)
 
 void AMDS_NetworkingCharacter::MoveRight(float Value)
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	if (Value != 0.0f)
 	{
@@ -224,7 +222,7 @@ void AMDS_NetworkingCharacter::MoveRight(float Value)
 
 void AMDS_NetworkingCharacter::Jump()
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	bPressedJump = true;
 	JumpKeyHoldTime = 0.0f;
@@ -232,7 +230,7 @@ void AMDS_NetworkingCharacter::Jump()
 
 void AMDS_NetworkingCharacter::StopJumping()
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	bPressedJump = false;
 	ResetJumpState();
@@ -240,7 +238,7 @@ void AMDS_NetworkingCharacter::StopJumping()
 
 void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	// calculate delta for this frame from the rate information
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
@@ -254,7 +252,7 @@ void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
 
 void AMDS_NetworkingCharacter::OnFire()
 {
-	if (CurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return void();
 
 	Server_OnFire();
 
@@ -309,6 +307,8 @@ void AMDS_NetworkingCharacter::Server_OnFire_Implementation()
 
 bool AMDS_NetworkingCharacter::Server_OnFire_Validate()
 {
+	if (m_fCurrentHealth > 100.0f) return false;
+
 	return true;
 }
 
@@ -382,7 +382,7 @@ void AMDS_NetworkingCharacter::EndTouch(const ETouchIndex::Type FingerIndex, con
 
 bool AMDS_NetworkingCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
 {
-	if (CurrentHealth <= 0) return false;
+	if (m_fCurrentHealth <= 0) return false;
 
 	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
 	{

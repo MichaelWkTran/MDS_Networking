@@ -44,7 +44,7 @@ void AMDS_NetworkingProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* Othe
 		AMDS_NetworkingCharacter* mCharacter = Cast<AMDS_NetworkingCharacter>(OtherActor);
 		if (mCharacter != nullptr && GetLocalRole() == ROLE_Authority)
 		{
-			mCharacter->CurrentHealth -= 10;
+			mCharacter->m_fCurrentHealth -= 10;
 		}
 
 		if (OtherComp->IsSimulatingPhysics())

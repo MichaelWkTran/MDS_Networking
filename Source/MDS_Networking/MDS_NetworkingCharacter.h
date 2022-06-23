@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -80,10 +78,14 @@ public:
 	AMDS_NetworkingCharacter();
 
 	//Health
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite)
-		float CurrentHealth;
-	UFUNCTION()
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentHealth, EditAnywhere, BlueprintReadWrite)
+		float m_fCurrentHealth;
+		UFUNCTION()
 		void OnRep_CurrentHealth();
+
+	//Objective
+		UPROPERTY(BlueprintReadWrite)
+			bool m_bHaveObjective;
 
 	//Movement
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)

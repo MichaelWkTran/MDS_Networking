@@ -18,7 +18,6 @@ public class MDS_Networking : ModuleRules
 				"InputCore",
 				"HeadMountedDisplay",
 				"OnlineSubsystem",
-				//"OnlineSubsystemUtils"
 				"OnlineSubsystemSteam"
 			}
 		);
