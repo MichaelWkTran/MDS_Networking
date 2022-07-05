@@ -20,21 +20,23 @@ class AMDS_NetworkingCharacter : public ACharacter
 
 private:
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USkeletalMeshComponent* Mesh1P;
+		USkeletalMeshComponent* m_pMesh1P;
+	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	//	USkeletalMeshComponent* m_pMesh3P;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USkeletalMeshComponent* FP_Gun;
+		USkeletalMeshComponent* m_pFPGun;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USceneComponent* FP_MuzzleLocation;
+		USceneComponent* m_pFPMuzzleLocation;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USkeletalMeshComponent* VR_Gun;
+		USkeletalMeshComponent* m_pVRGun;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USceneComponent* VR_MuzzleLocation;
+		USceneComponent* m_pVRMuzzleLocation;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		UCameraComponent* FirstPersonCameraComponent;
+		UCameraComponent* m_pFPCameraComponent;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UMotionControllerComponent* R_MotionController;
+		UMotionControllerComponent* m_pMotionControllerR;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UMotionControllerComponent* L_MotionController;
+		UMotionControllerComponent* m_pMotionControllerL;
 
 protected:
 	virtual void BeginPlay();
@@ -89,9 +91,9 @@ public:
 
 	//Movement
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-		float BaseTurnRate;
+		float m_fBaseTurnRate;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-		float BaseLookUpRate;
+		float m_fBaseLookUpRate;
 
 	//Gun
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
@@ -105,10 +107,10 @@ public:
 
 	//Controls
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-		uint8 bUsingMotionControllers : 1;
+		uint8 m_bUsingMotionControllers : 1;
 
 	//Get Set Components
-	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
-	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+	USkeletalMeshComponent* GetMesh1P() const { return m_pMesh1P; }
+	UCameraComponent* GetFirstPersonCameraComponent() const { return m_pFPCameraComponent; }
 };
 

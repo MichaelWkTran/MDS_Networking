@@ -8,7 +8,7 @@
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
-#include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "XRMotionControllerBase.h" //for FXRMotionControllerBase::RightHandSourceId
 #include "DrawDebugHelpers.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -16,90 +16,94 @@ DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 {
 	m_fCurrentHealth = 100.0f;
+	m_fBaseTurnRate = 45.0f;
+	m_fBaseLookUpRate = 45.0f;
 
-	// Set size for collision capsule
-	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
+	m_bUsingMotionControllers = false;
 
-	// set our turn rates for input
-	BaseTurnRate = 45.f;
-	BaseLookUpRate = 45.f;
+	//Setup Components--------------------------------------------------------------------------------------------------------------------------------------------
+	GetCapsuleComponent()->InitCapsuleSize(55.0f, 96.0f);
 
-	// Create a CameraComponent	
-	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
-	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
-	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
-	FirstPersonCameraComponent->bUsePawnControlRotation = true;
+	//Create a CameraComponent	
+	m_pFPCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
+	m_pFPCameraComponent->SetupAttachment(GetCapsuleComponent());
+	
+	m_pFPCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.0f));
+	m_pFPCameraComponent->bUsePawnControlRotation = true;
 
-	// Create a mesh component that will be used when being viewed from a '1st person' view (when controlling this pawn)
-	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
-	Mesh1P->SetOnlyOwnerSee(true);
-	Mesh1P->SetupAttachment(FirstPersonCameraComponent);
-	Mesh1P->bCastDynamicShadow = false;
-	Mesh1P->CastShadow = false;
-	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
-	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
+	//Create a mesh component that will be used when being viewed from a '1st person' view
+	m_pMesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
+	m_pMesh1P->SetupAttachment(m_pFPCameraComponent);
+	
+	m_pMesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
+	m_pMesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
+	
+	m_pMesh1P->SetOnlyOwnerSee(true);
+	m_pMesh1P->bCastDynamicShadow = false;
+	m_pMesh1P->CastShadow = false;
 
-	// Create a gun mesh component
-	FP_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FP_Gun"));
-	FP_Gun->SetOnlyOwnerSee(false);			// otherwise won't be visible in the multiplayer
-	FP_Gun->bCastDynamicShadow = false;
-	FP_Gun->CastShadow = false;
-	// FP_Gun->SetupAttachment(Mesh1P, TEXT("GripPoint"));
-	FP_Gun->SetupAttachment(RootComponent);
+	//Create a mesh component that will be used when being viewed from a '3rd person' view
+	//m_pMesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
 
-	FP_MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("MuzzleLocation"));
-	FP_MuzzleLocation->SetupAttachment(FP_Gun);
-	FP_MuzzleLocation->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
+	//Create a gun mesh component
+	m_pFPGun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FP_Gun"));
 
-	// Default offset from the character location for projectiles to spawn
+	m_pFPGun->SetOnlyOwnerSee(false);
+	m_pFPGun->bCastDynamicShadow = false;
+	m_pFPGun->CastShadow = false;
+	//FP_Gun->SetupAttachment(Mesh1P, TEXT("GripPoint"));
+	m_pFPGun->SetupAttachment(RootComponent);
+
+	m_pFPMuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("MuzzleLocation"));
+	m_pFPMuzzleLocation->SetupAttachment(m_pFPGun);
+	m_pFPMuzzleLocation->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
+
+	//Default offset from the character location for projectiles to spawn
 	GunOffset = FVector(100.0f, 0.0f, 10.0f);
 
-	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
-	// are set in the derived blueprint asset named MyCharacter to avoid direct content references in C++.
+	//Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
+	//are set in the derived blueprint asset named MyCharacter to avoid direct content references in C++.
 
-	// Create VR Controllers.
-	R_MotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("R_MotionController"));
-	R_MotionController->MotionSource = FXRMotionControllerBase::RightHandSourceId;
-	R_MotionController->SetupAttachment(RootComponent);
-	L_MotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("L_MotionController"));
-	L_MotionController->SetupAttachment(RootComponent);
+	//Create VR Controllers.
+	m_pMotionControllerR = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("R_MotionController"));
+	m_pMotionControllerR->MotionSource = FXRMotionControllerBase::RightHandSourceId;
+	m_pMotionControllerR->SetupAttachment(RootComponent);
+	m_pMotionControllerL = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("L_MotionController"));
+	m_pMotionControllerL->SetupAttachment(RootComponent);
 
-	// Create a gun and attach it to the right-hand VR controller.
-	// Create a gun mesh component
-	VR_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VR_Gun"));
-	VR_Gun->SetOnlyOwnerSee(false);			// otherwise won't be visible in the multiplayer
-	VR_Gun->bCastDynamicShadow = false;
-	VR_Gun->CastShadow = false;
-	VR_Gun->SetupAttachment(R_MotionController);
-	VR_Gun->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
+	//Create a gun and attach it to the right-hand VR controller.
+	//Create a gun mesh component
+	m_pVRGun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VR_Gun"));
+	m_pVRGun->SetOnlyOwnerSee(false);
+	m_pVRGun->bCastDynamicShadow = false;
+	m_pVRGun->CastShadow = false;
+	m_pVRGun->SetupAttachment(m_pMotionControllerR);
+	m_pVRGun->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
 
-	VR_MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("VR_MuzzleLocation"));
-	VR_MuzzleLocation->SetupAttachment(VR_Gun);
-	VR_MuzzleLocation->SetRelativeLocation(FVector(0.000004, 53.999992, 10.000000));
-	VR_MuzzleLocation->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));		// Counteract the rotation of the VR gun model.
-
-	// Uncomment the following line to turn motion controllers on by default:
-	//bUsingMotionControllers = true;
+	m_pVRMuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("VR_MuzzleLocation"));
+	m_pVRMuzzleLocation->SetupAttachment(m_pVRGun);
+	m_pVRMuzzleLocation->SetRelativeLocation(FVector(0.000004, 53.999992, 10.000000));
+	m_pVRMuzzleLocation->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));		//Counteract the rotation of the VR gun model.
 }
 
 /*Virtual*/ void AMDS_NetworkingCharacter::BeginPlay()
 {
-	// Call the base class  
+	//Call the base class  
 	Super::BeginPlay();
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
-	FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
+	m_pFPGun->AttachToComponent(m_pMesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 
-	// Show or hide the two versions of the gun based on whether or not we're using motion controllers.
-	if (bUsingMotionControllers)
+	//Show or hide the two versions of the gun based on whether or not we're using motion controllers.
+	if (m_bUsingMotionControllers)
 	{
-		VR_Gun->SetHiddenInGame(false, true);
-		Mesh1P->SetHiddenInGame(true, true);
+		m_pVRGun->SetHiddenInGame(false, true);
+		m_pMesh1P->SetHiddenInGame(true, true);
 	}
 	else
 	{
-		VR_Gun->SetHiddenInGame(true, true);
-		Mesh1P->SetHiddenInGame(false, true);
+		m_pVRGun->SetHiddenInGame(true, true);
+		m_pMesh1P->SetHiddenInGame(false, true);
 	}
 }
 
@@ -161,28 +165,28 @@ void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 
 void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	// set up gameplay key bindings
+	//set up gameplay key bindings
 	check(PlayerInputComponent);
 
-	// Bind jump events
+	//Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
 
-	// Bind fire event
+	//Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
 
-	// Enable touchscreen input
+	//Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
 
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMDS_NetworkingCharacter::OnResetVR);
 
-	// Bind movement events
+	//Bind movement events
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMDS_NetworkingCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMDS_NetworkingCharacter::MoveRight);
 
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
+	//We have 2 versions of the rotation bindings to handle different kinds of devices differently
+	//"turn" handles devices that provide an absolute delta, such as a mouse.
+	//"turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("TurnRate", this, &AMDS_NetworkingCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
@@ -204,7 +208,7 @@ void AMDS_NetworkingCharacter::MoveForward(float Value)
 
 	if (Value != 0.0f)
 	{
-		// add movement in that direction
+		//add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
 	}
 }
@@ -215,7 +219,7 @@ void AMDS_NetworkingCharacter::MoveRight(float Value)
 
 	if (Value != 0.0f)
 	{
-		// add movement in that direction
+		//add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
 	}
 }
@@ -240,14 +244,14 @@ void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
 {
 	if (m_fCurrentHealth <= 0) return void();
 
-	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	//calculate delta for this frame from the rate information
+	AddControllerYawInput(Rate * m_fBaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
 void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
 {
-	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	//calculate delta for this frame from the rate information
+	AddControllerPitchInput(Rate * m_fBaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
 void AMDS_NetworkingCharacter::OnFire()
@@ -256,49 +260,49 @@ void AMDS_NetworkingCharacter::OnFire()
 
 	Server_OnFire();
 
-	// try and play the sound if specified
+	//try and play the sound if specified
 	if (FireSound != nullptr)
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 	}
 
-	// try and play a firing animation if specified
+	//try and play a firing animation if specified
 	if (FireAnimation != nullptr)
 	{
-		// Get the animation object for the arms mesh
-		UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+		//Get the animation object for the arms mesh
+		UAnimInstance* AnimInstance = m_pMesh1P->GetAnimInstance();
 		if (AnimInstance != nullptr)
 		{
-			AnimInstance->Montage_Play(FireAnimation, 1.f);
+			AnimInstance->Montage_Play(FireAnimation, 1.0f);
 		}
 	}
 }
 
 void AMDS_NetworkingCharacter::Server_OnFire_Implementation()
 {
-	// try and fire a projectile
+	//try and fire a projectile
 	if (ProjectileClass != nullptr)
 	{
 		UWorld* const World = GetWorld();
 		if (World != nullptr)
 		{
-			if (bUsingMotionControllers)
+			if (m_bUsingMotionControllers)
 			{
-				const FRotator SpawnRotation = VR_MuzzleLocation->GetComponentRotation();
-				const FVector SpawnLocation = VR_MuzzleLocation->GetComponentLocation();
+				const FRotator SpawnRotation = m_pVRMuzzleLocation->GetComponentRotation();
+				const FVector SpawnLocation = m_pVRMuzzleLocation->GetComponentLocation();
 				World->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
 			}
 			else
 			{
 				const FRotator SpawnRotation = GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
+				//MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = ((m_pFPMuzzleLocation != nullptr) ? m_pFPMuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
 
 				//Set Spawn Collision Handling Override
 				FActorSpawnParameters ActorSpawnParams;
 				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
-				// spawn the projectile at the muzzle
+				//spawn the projectile at the muzzle
 				World->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 			}
 		}
