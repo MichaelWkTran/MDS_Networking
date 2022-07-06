@@ -1,7 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MDS_NetworkingProjectile.generated.h"
@@ -9,29 +6,48 @@
 class USphereComponent;
 class UProjectileMovementComponent;
 
+USTRUCT()
+struct FServerState
+{
+	GENERATED_BODY()
+
+	UPROPERTY()
+		FVector vLocation;
+	UPROPERTY()
+		FVector vVelocity;
+};
+
 UCLASS(config=Game)
 class AMDS_NetworkingProjectile : public AActor
 {
 	GENERATED_BODY()
 
-	/** Sphere collision component */
+private:
+	//Components-----------------------------------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
-	USphereComponent* CollisionComp;
-
-	/** Projectile movement component */
+		USphereComponent* CollisionComp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
-	UProjectileMovementComponent* ProjectileMovement;
+		UProjectileMovementComponent* ProjectileMovement;
 
+	
+
+protected:
+	virtual void Tick(float _fDeltatime) override;
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;
+
+	//
+	UPROPERTY(ReplicatedUsing = OnRep_ServerState)
+		FServerState m_ServerState;
+	UFUNCTION()
+		void OnRep_ServerState();
 public:
 	AMDS_NetworkingProjectile();
 
-	/** called when projectile hits something */
 	UFUNCTION()
-	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	/** Returns CollisionComp subobject **/
+	//Get Set Methods---------------------------------------------------------------------------------------------------------------------------------------------
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }
-	/** Returns ProjectileMovement subobject **/
 	UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
 };
 

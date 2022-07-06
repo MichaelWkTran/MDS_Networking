@@ -13,7 +13,6 @@ AMDS_NetworkingMovingPlatform::AMDS_NetworkingMovingPlatform()
 	if (HasAuthority())
 	{
 		SetReplicates(true);
-		SetReplicateMovement(true);
 	}
 
 	m_fBounceMagnitude = 200.0f;
@@ -43,16 +42,11 @@ void AMDS_NetworkingMovingPlatform::Tick(float _fDeltaTime)
 		m_fBounceFactor += _fDeltaTime * m_fBounceRate;
 		while (m_fBounceFactor > 2.0f) m_fBounceFactor -= 2.0f;
 
-		FMovingPlatformMove Move;
-		Move.fBounceFactor = m_fBounceFactor;
-
-		SetActorLocation(m_vStartLocation + SimulateMove(Move));
-
-		m_ServerState.LastMove = Move;
-		m_ServerState.Transform = GetActorTransform();
+		SetActorLocation(m_vStartLocation + FVector(0.0f, 0.0f, m_fBounceMagnitude * sin(m_fBounceFactor * 2 * PI)));
+		m_vServerLocation = GetActorLocation();
 	}
 
-	//On client
+	//On Client
 	if (GetLocalRole() == ROLE_SimulatedProxy)
 	{
 		m_fClientTimeSinceUpdate += _fDeltaTime;
@@ -60,12 +54,9 @@ void AMDS_NetworkingMovingPlatform::Tick(float _fDeltaTime)
 		//Ignore First Update
 		if (m_fClientTimeSinceUpdate < KINDA_SMALL_NUMBER) return;
 
-		//Lerp Position
-		FVector StartLocation = m_ClientStartTransform.GetLocation();
-		FVector TargetLocation = m_ServerState.Transform.GetLocation();
-		float fLerpRatio = m_fClientTimeBetweenLastUpdate / m_fClientTimeSinceUpdate;
-
-		FVector NewLocation = FMath::Lerp(StartLocation, TargetLocation, fLerpRatio);
+		//Interpolate between the client and server location
+		float fLerpRatio = m_fClientTimeSinceUpdate / m_fClientTimeBetweenLastUpdate;
+		FVector NewLocation = FMath::Lerp(m_vClientStartLocation, m_vServerLocation, fLerpRatio);
 
 		SetActorLocation(NewLocation);
 	}
@@ -75,21 +66,16 @@ void AMDS_NetworkingMovingPlatform::GetLifetimeReplicatedProps(TArray<FLifetimeP
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(AMDS_NetworkingMovingPlatform, m_ServerState);
+	DOREPLIFETIME(AMDS_NetworkingMovingPlatform, m_vServerLocation);
 }
 
-void AMDS_NetworkingMovingPlatform::OnRep_ServerState()
+void AMDS_NetworkingMovingPlatform::OnRep_ServerLocation()
 {
 	//In the case of simulated proxy
 	if (GetLocalRole() == ROLE_SimulatedProxy)
 	{
-		m_fClientTimeSinceUpdate = m_fClientTimeBetweenLastUpdate;
-		m_fClientTimeBetweenLastUpdate = 0;
-		m_ClientStartTransform = GetActorTransform();
+		m_fClientTimeBetweenLastUpdate = m_fClientTimeSinceUpdate;
+		m_fClientTimeSinceUpdate = 0;
+		m_vClientStartLocation = GetActorLocation();
 	}
-}
-
-FVector AMDS_NetworkingMovingPlatform::SimulateMove(FMovingPlatformMove _Move)
-{
-	return FVector(0.0f, 0.0f, m_fBounceMagnitude * sin(m_fBounceFactor * 2 * PI));
 }

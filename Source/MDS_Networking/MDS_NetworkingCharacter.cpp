@@ -115,47 +115,6 @@ struct stMove
 	float fCurrentTime;
 };
 
-/*Virtual*/ void AMDS_NetworkingCharacter::Tick(float _fDeltatime)
-{
-	Super::Tick(_fDeltatime);
-
-	auto GetEnumText = [](ENetRole _Role)
-	{
-		switch (_Role)
-		{
-		case ROLE_None:
-			return "None";
-		case ROLE_SimulatedProxy:
-			return "SimulatedProxy";
-		case ROLE_AutonomousProxy:
-			return "AutonomousProxy";
-		case ROLE_Authority:
-			return "Authority";
-		default:
-			return "ERROR";
-		}
-	};
-
-	DrawDebugString
-	(
-		GetWorld(),
-		FVector(0.0f, 0.0f, 100.0f),
-		GetEnumText(GetLocalRole()),
-		this,
-		FColor::White,
-		_fDeltatime
-	);
-
-	//if (Role == ROLE_AutonomousProxy)
-	//{
-	//	stMove move = stMove{ _fDeltatime };
-	//	SimulateMove(move);
-	//
-	//	Moves.Add(move);
-	//	Server_SendMove(move);
-	//}
-}
-
 void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
@@ -163,34 +122,34 @@ void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 	DOREPLIFETIME(AMDS_NetworkingCharacter, m_fCurrentHealth);
 }
 
-void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* _pPlayerInputComponent)
 {
-	//set up gameplay key bindings
-	check(PlayerInputComponent);
+	//Set up gameplay key bindings
+	check(_pPlayerInputComponent);
 
 	//Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
+	_pPlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMDS_NetworkingCharacter::Jump);
+	_pPlayerInputComponent->BindAction("Jump", IE_Released, this, &AMDS_NetworkingCharacter::StopJumping);
 
 	//Bind fire event
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
+	_pPlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMDS_NetworkingCharacter::OnFire);
 
 	//Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
+	EnableTouchscreenMovement(_pPlayerInputComponent);
 
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMDS_NetworkingCharacter::OnResetVR);
+	_pPlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMDS_NetworkingCharacter::OnResetVR);
 
 	//Bind movement events
-	PlayerInputComponent->BindAxis("MoveForward", this, &AMDS_NetworkingCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AMDS_NetworkingCharacter::MoveRight);
+	_pPlayerInputComponent->BindAxis("MoveForward", this, &AMDS_NetworkingCharacter::MoveForward);
+	_pPlayerInputComponent->BindAxis("MoveRight", this, &AMDS_NetworkingCharacter::MoveRight);
 
 	//We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	//"turn" handles devices that provide an absolute delta, such as a mouse.
 	//"turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AMDS_NetworkingCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AMDS_NetworkingCharacter::LookUpAtRate);
+	_pPlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	_pPlayerInputComponent->BindAxis("TurnRate", this, &AMDS_NetworkingCharacter::TurnAtRate);
+	_pPlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	_pPlayerInputComponent->BindAxis("LookUpRate", this, &AMDS_NetworkingCharacter::LookUpAtRate);
 }
 
 //void AMDS_NetworkingCharacter::Server_SendMove_Implementation(FGoKartMove _Move)
@@ -202,31 +161,23 @@ void AMDS_NetworkingCharacter::SetupPlayerInputComponent(class UInputComponent* 
 //	ServerState.Velocity = velocity;
 //}
 
-void AMDS_NetworkingCharacter::MoveForward(float Value)
+void AMDS_NetworkingCharacter::MoveForward(float _fValue)
 {
-	if (m_fCurrentHealth <= 0) return void();
-
-	if (Value != 0.0f)
-	{
-		//add movement in that direction
-		AddMovementInput(GetActorForwardVector(), Value);
-	}
+	if (_fValue == 0.0f || m_fCurrentHealth <= 0) return;
+	
+	AddMovementInput(GetActorForwardVector(), _fValue);
 }
 
-void AMDS_NetworkingCharacter::MoveRight(float Value)
+void AMDS_NetworkingCharacter::MoveRight(float _fValue)
 {
-	if (m_fCurrentHealth <= 0) return void();
+	if (_fValue == 0.0f || m_fCurrentHealth <= 0) return;
 
-	if (Value != 0.0f)
-	{
-		//add movement in that direction
-		AddMovementInput(GetActorRightVector(), Value);
-	}
+	AddMovementInput(GetActorRightVector(), _fValue);
 }
 
 void AMDS_NetworkingCharacter::Jump()
 {
-	if (m_fCurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return;
 
 	bPressedJump = true;
 	JumpKeyHoldTime = 0.0f;
@@ -234,78 +185,75 @@ void AMDS_NetworkingCharacter::Jump()
 
 void AMDS_NetworkingCharacter::StopJumping()
 {
-	if (m_fCurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return;
 
 	bPressedJump = false;
 	ResetJumpState();
 }
 
-void AMDS_NetworkingCharacter::TurnAtRate(float Rate)
+void AMDS_NetworkingCharacter::TurnAtRate(float _fRate)
 {
-	if (m_fCurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return;
 
-	//calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * m_fBaseTurnRate * GetWorld()->GetDeltaSeconds());
+	//Calculate delta for this frame from the rate information
+	AddControllerYawInput(_fRate * m_fBaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AMDS_NetworkingCharacter::LookUpAtRate(float Rate)
+void AMDS_NetworkingCharacter::LookUpAtRate(float _fRate)
 {
-	//calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * m_fBaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	//Calculate delta for this frame from the rate information
+	AddControllerPitchInput(_fRate * m_fBaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
 void AMDS_NetworkingCharacter::OnFire()
 {
-	if (m_fCurrentHealth <= 0) return void();
+	if (m_fCurrentHealth <= 0) return;
 
 	Server_OnFire();
 
-	//try and play the sound if specified
+	//Try and play the sound if specified
 	if (FireSound != nullptr)
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 	}
 
-	//try and play a firing animation if specified
+	//Try and play a firing animation if specified
 	if (FireAnimation != nullptr)
 	{
 		//Get the animation object for the arms mesh
-		UAnimInstance* AnimInstance = m_pMesh1P->GetAnimInstance();
-		if (AnimInstance != nullptr)
+		UAnimInstance* pAnimInstance = m_pMesh1P->GetAnimInstance();
+		if (pAnimInstance != nullptr)
 		{
-			AnimInstance->Montage_Play(FireAnimation, 1.0f);
+			pAnimInstance->Montage_Play(FireAnimation, 1.0f);
 		}
 	}
 }
 
 void AMDS_NetworkingCharacter::Server_OnFire_Implementation()
 {
-	//try and fire a projectile
-	if (ProjectileClass != nullptr)
+	if (ProjectileClass == nullptr) return;
+
+	UWorld* const pWorld = GetWorld();
+	if (pWorld == nullptr) return;
+
+	if (m_bUsingMotionControllers)
 	{
-		UWorld* const World = GetWorld();
-		if (World != nullptr)
-		{
-			if (m_bUsingMotionControllers)
-			{
-				const FRotator SpawnRotation = m_pVRMuzzleLocation->GetComponentRotation();
-				const FVector SpawnLocation = m_pVRMuzzleLocation->GetComponentLocation();
-				World->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-			}
-			else
-			{
-				const FRotator SpawnRotation = GetControlRotation();
-				//MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = ((m_pFPMuzzleLocation != nullptr) ? m_pFPMuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
+		const FRotator SpawnRotation = m_pVRMuzzleLocation->GetComponentRotation();
+		const FVector SpawnLocation = m_pVRMuzzleLocation->GetComponentLocation();
+		pWorld->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
+	}
+	else
+	{
+		const FRotator SpawnRotation = GetControlRotation();
+		//MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+		const FVector SpawnLocation = ((m_pFPMuzzleLocation != nullptr) ? m_pFPMuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
 
-				//Set Spawn Collision Handling Override
-				FActorSpawnParameters ActorSpawnParams;
-				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+		//Set Spawn Collision Handling Override
+		FActorSpawnParameters ActorSpawnParams;
+		ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
-				//spawn the projectile at the muzzle
-				World->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-			}
-		}
+		//spawn the projectile at the muzzle
+		pWorld->SpawnActor<AMDS_NetworkingProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 	}
 }
 
@@ -323,14 +271,13 @@ void AMDS_NetworkingCharacter::OnResetVR()
 
 void AMDS_NetworkingCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	if (TouchItem.bIsPressed == true)
-	{
-		return;
-	}
-	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
+	if (TouchItem.bIsPressed == true) return;
+
+	if (FingerIndex == TouchItem.FingerIndex && (TouchItem.bMoved == false))
 	{
 		OnFire();
 	}
+
 	TouchItem.bIsPressed = true;
 	TouchItem.FingerIndex = FingerIndex;
 	TouchItem.Location = Location;
@@ -339,10 +286,8 @@ void AMDS_NetworkingCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, c
 
 void AMDS_NetworkingCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	if (TouchItem.bIsPressed == false)
-	{
-		return;
-	}
+	if (TouchItem.bIsPressed == false) return;
+
 	TouchItem.bIsPressed = false;
 }
 

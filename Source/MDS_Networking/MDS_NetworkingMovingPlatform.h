@@ -1,28 +1,7 @@
 #pragma once
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MDS_NetworkingMovingPlatform.generated.h"
-
-USTRUCT()
-struct FMovingPlatformMove
-{
-	GENERATED_BODY()
-
-	UPROPERTY();
-		float fBounceFactor;
-};
-
-USTRUCT()
-struct FMovingPlatformServerState
-{
-	GENERATED_BODY()
-
-	UPROPERTY()
-		FMovingPlatformMove LastMove;
-	UPROPERTY()
-		FTransform Transform;
-};
 
 UCLASS()
 class MDS_NETWORKING_API AMDS_NetworkingMovingPlatform : public AActor
@@ -39,18 +18,16 @@ protected:
 
 	FVector m_vStartLocation;
 	float m_fBounceMagnitude;
-	float m_fBounceFactor;
 	float m_fBounceRate;
-	UPROPERTY(ReplicatedUsing = OnRep_ServerState)
-		FMovingPlatformServerState m_ServerState;
+	float m_fBounceFactor;
+	
+	UPROPERTY(ReplicatedUsing = OnRep_ServerLocation)
+		FVector m_vServerLocation;
 	UFUNCTION()
-		void OnRep_ServerState();
+		void OnRep_ServerLocation();
+	FVector m_vClientStartLocation;
 	float m_fClientTimeSinceUpdate;
 	float m_fClientTimeBetweenLastUpdate;
-	FTransform m_ClientStartTransform;
-
-	UFUNCTION()
-		FVector SimulateMove(FMovingPlatformMove _Move);
 
 public:
 	AMDS_NetworkingMovingPlatform();

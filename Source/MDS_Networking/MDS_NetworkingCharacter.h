@@ -19,6 +19,7 @@ class AMDS_NetworkingCharacter : public ACharacter
 	GENERATED_BODY()
 
 private:
+	//Components-----------------------------------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		USkeletalMeshComponent* m_pMesh1P;
 	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
@@ -40,7 +41,6 @@ private:
 
 protected:
 	virtual void BeginPlay();
-	virtual void Tick(float _fDeltatime) override;
 
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;
 	
