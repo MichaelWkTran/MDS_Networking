@@ -3,7 +3,7 @@
 #include "Components/SphereComponent.h"
 #include "MDS_NetworkingCharacter.h"
 #include "Net/UnrealNetwork.h"
-
+	
 AMDS_NetworkingProjectile::AMDS_NetworkingProjectile()
 {
 	//Use a sphere as a simple collision representation

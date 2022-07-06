@@ -13,6 +13,13 @@ class UMotionControllerComponent;
 class UAnimMontage;
 class USoundBase;
 
+USTRUCT()
+struct FCharacterServerState
+{
+	FVector vLocation;
+	FVector vVelocity;
+};
+
 UCLASS(config = Game)
 class AMDS_NetworkingCharacter : public ACharacter
 {
@@ -44,9 +51,6 @@ protected:
 
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;
 	
-	//UFUNCTION(Server, Reliable)
-		//void Server_SendMove(FGoKartMove _Move);
-
 	void MoveForward(float Val);
 	void MoveRight(float Val);
 	void Jump();

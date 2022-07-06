@@ -7,7 +7,7 @@ class USphereComponent;
 class UProjectileMovementComponent;
 
 USTRUCT()
-struct FServerState
+struct FProjectileServerState
 {
 	GENERATED_BODY()
 
@@ -37,7 +37,7 @@ protected:
 
 	//
 	UPROPERTY(ReplicatedUsing = OnRep_ServerState)
-		FServerState m_ServerState;
+		FProjectileServerState m_ServerState;
 	UFUNCTION()
 		void OnRep_ServerState();
 public:

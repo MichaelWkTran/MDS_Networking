@@ -56,7 +56,7 @@ void AMDS_NetworkingMovingPlatform::Tick(float _fDeltaTime)
 
 		//Interpolate between the client and server location
 		float fLerpRatio = m_fClientTimeSinceUpdate / m_fClientTimeBetweenLastUpdate;
-		FVector NewLocation = FMath::Lerp(m_vClientStartLocation, m_vServerLocation, fLerpRatio);
+		FVector NewLocation = FMath::LerpStable(m_vClientStartLocation, m_vServerLocation, fLerpRatio);
 
 		SetActorLocation(NewLocation);
 	}
