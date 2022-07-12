@@ -43,7 +43,7 @@ AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 	m_pMesh1P->CastShadow = false;
 
 	//Create a mesh component that will be used when being viewed from a '3rd person' view
-	//m_pMesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
+	m_pMesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh3P"));
 
 	//Create a gun mesh component
 	m_pFPGun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FP_Gun"));
@@ -106,14 +106,6 @@ AMDS_NetworkingCharacter::AMDS_NetworkingCharacter()
 		m_pMesh1P->SetHiddenInGame(false, true);
 	}
 }
-
-struct stMove
-{
-	float fDeltatime;
-	float fThrottle;
-	float fSteering;
-	float fCurrentTime;
-};
 
 void AMDS_NetworkingCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {

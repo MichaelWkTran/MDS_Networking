@@ -16,6 +16,8 @@ class USoundBase;
 USTRUCT()
 struct FCharacterServerState
 {
+	GENERATED_BODY();
+
 	FVector vLocation;
 	FVector vVelocity;
 };
@@ -29,8 +31,8 @@ private:
 	//Components-----------------------------------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		USkeletalMeshComponent* m_pMesh1P;
-	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-	//	USkeletalMeshComponent* m_pMesh3P;
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+		USkeletalMeshComponent* m_pMesh3P;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		USkeletalMeshComponent* m_pFPGun;
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)

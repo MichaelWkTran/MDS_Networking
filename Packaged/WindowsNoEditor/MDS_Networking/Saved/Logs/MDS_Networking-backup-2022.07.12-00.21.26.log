@@ -1,0 +1,936 @@
+﻿Log file open, 07/12/22 12:20:12
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=30074
+LogPakFile: PakFile PathHashIndexSize=47883
+LogPakFile: PakFile FullDirectoryIndexSize=63037
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000434
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.132262
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +12:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin OnlineSubsystemSteam
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin SteamShared
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PixWinPlugin
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin OpenImageDenoise
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin OpenXREyeTracker
+LogPluginManager: Mounting plugin OpenXR
+LogPluginManager: Mounting plugin OpenXRHandTracking
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogSteamShared: Display: Loading Steam SDK 1.51
+LogSteamShared: Steam SDK Loaded!
+LogOnline: OSS: Creating online subsystem instance for: Steam
+LogSteamShared: Warning: SteamAPI failed to initialize, conditions not met.
+LogOnline: Warning: STEAM: Steamworks: SteamUtils() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamUser() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamFriends() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamUserStats() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamApps() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamNetworking() failed!
+LogOnline: Warning: STEAM: Steamworks: SteamMatchmaking() failed!
+LogOnline: STEAM: [AppId: 0] Client API initialized 0
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogOnline: Warning: STEAM: Steam API failed to initialize!
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogOnline: OSS: Unable to create OnlineSubsystem module Steam
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.59.0
+LogInit: Build: ++UE4+Release-4.27-CL-18319896
+LogInit: Engine Version: 4.27.2-18319896+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU:        Intel(R) Core(TM) i7-3770K CPU @ 3.50GHz, GPU: AMD Radeon HD 7700 Series
+LogInit: Compiled (64-bit): Nov 30 2021 07:26:28
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  -log
+LogInit: Base Directory: C:/Users/User/Documents/GitHub/MDS_Networking/Packaged/WindowsNoEditor/MDS_Networking/Binaries/Win64/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2022.07.12-00.20.14:623][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2022.07.12-00.20.14:623][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.07.12-00.20.14:624][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2022.07.12-00.20.14:624][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:624][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.07.12-00.20.14:624][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:625][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:625][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.07.12-00.20.14:625][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.07.12-00.20.14:625][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.07.12-00.20.14:625][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.07.12-00.20.14:626][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.07.12-00.20.14:626][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.07.12-00.20.14:626][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.07.12-00.20.14:626][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.07.12-00.20.14:627][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.07.12-00.20.14:627][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.07.12-00.20.14:627][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.07.12-00.20.14:627][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.07.12-00.20.14:628][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.07.12-00.20.14:628][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.07.12-00.20.14:628][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:629][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.07.12-00.20.14:629][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.07.12-00.20.14:629][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.07.12-00.20.14:629][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.07.12-00.20.14:629][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.07.12-00.20.14:630][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.07.12-00.20.14:630][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.07.12-00.20.14:630][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.07.12-00.20.14:630][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.07.12-00.20.14:631][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.07.12-00.20.14:631][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.07.12-00.20.14:631][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.07.12-00.20.14:631][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.07.12-00.20.14:632][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.07.12-00.20.14:632][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:638][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:638][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.07.12-00.20.14:638][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.07.12-00.20.14:638][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:638][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.07.12-00.20.14:639][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:639][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.07.12-00.20.14:639][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.07.12-00.20.14:639][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.07.12-00.20.14:640][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.07.12-00.20.14:640][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.07.12-00.20.14:640][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.07.12-00.20.14:640][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.07.12-00.20.14:641][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.07.12-00.20.14:641][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.07.12-00.20.14:641][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.07.12-00.20.14:641][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.07.12-00.20.14:642][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.07.12-00.20.14:642][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.07.12-00.20.14:642][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.07.12-00.20.14:642][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.07.12-00.20.14:643][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.07.12-00.20.14:643][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.07.12-00.20.14:643][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.07.12-00.20.14:643][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:643][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.07.12-00.20.14:644][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.07.12-00.20.14:644][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.07.12-00.20.14:644][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.07.12-00.20.14:644][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.07.12-00.20.14:645][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.07.12-00.20.14:645][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.07.12-00.20.14:645][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.07.12-00.20.14:646][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.07.12-00.20.14:646][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.07.12-00.20.14:646][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.07.12-00.20.14:646][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.07.12-00.20.14:647][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.07.12-00.20.14:647][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.07.12-00.20.14:647][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.07.12-00.20.14:647][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.07.12-00.20.14:648][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.07.12-00.20.14:648][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.07.12-00.20.14:648][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.07.12-00.20.14:648][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.07.12-00.20.14:649][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.07.12-00.20.14:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.07.12-00.20.14:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.07.12-00.20.14:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.07.12-00.20.14:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.07.12-00.20.14:650][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.07.12-00.20.14:650][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.07.12-00.20.14:650][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.07.12-00.20.14:650][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.07.12-00.20.14:651][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.07.12-00.20.14:651][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:651][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.07.12-00.20.14:651][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.07.12-00.20.14:652][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.07.12-00.20.14:654][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.07.12-00.20.14:654][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.07.12-00.20.14:655][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.07.12-00.20.14:655][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.07.12-00.20.14:655][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.07.12-00.20.14:655][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.07.12-00.20.14:656][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:656][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.07.12-00.20.14:656][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.07.12-00.20.14:656][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.07.12-00.20.14:656][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.07.12-00.20.14:657][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.07.12-00.20.14:657][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.07.12-00.20.14:657][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.07.12-00.20.14:657][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.07.12-00.20.14:658][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.07.12-00.20.14:658][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.07.12-00.20.14:658][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.07.12-00.20.14:658][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.07.12-00.20.14:659][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.07.12-00.20.14:659][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.07.12-00.20.14:659][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.07.12-00.20.14:659][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.07.12-00.20.14:660][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.07.12-00.20.14:660][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.07.12-00.20.14:660][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.07.12-00.20.14:660][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.07.12-00.20.14:661][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.07.12-00.20.14:661][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.07.12-00.20.14:661][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.07.12-00.20.14:661][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.07.12-00.20.14:661][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.07.12-00.20.14:662][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.07.12-00.20.14:662][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.07.12-00.20.14:662][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.07.12-00.20.14:662][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.07.12-00.20.14:663][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:663][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.07.12-00.20.14:663][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.07.12-00.20.14:663][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:664][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.07.12-00.20.14:664][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.07.12-00.20.14:664][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.07.12-00.20.14:664][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2022.07.12-00.20.14:665][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2022.07.12-00.20.14:665][  0]LogHAL: Display: Platform has ~ 16 GB [17121431552 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.07.12-00.20.14:665][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2022.07.12-00.20.14:665][  0]LogInit: Going up to parent DeviceProfile []
+[2022.07.12-00.20.14:666][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:666][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.07.12-00.20.14:666][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.07.12-00.20.14:666][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:666][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.07.12-00.20.14:667][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:667][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.07.12-00.20.14:667][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.07.12-00.20.14:667][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.07.12-00.20.14:668][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.07.12-00.20.14:670][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.07.12-00.20.14:670][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.07.12-00.20.14:670][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.07.12-00.20.14:671][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.07.12-00.20.14:671][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.07.12-00.20.14:671][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.07.12-00.20.14:671][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.07.12-00.20.14:672][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.07.12-00.20.14:672][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.07.12-00.20.14:672][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.07.12-00.20.14:672][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.07.12-00.20.14:672][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.07.12-00.20.14:673][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.07.12-00.20.14:673][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.07.12-00.20.14:673][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:673][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.07.12-00.20.14:674][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.07.12-00.20.14:674][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.07.12-00.20.14:674][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.07.12-00.20.14:674][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.07.12-00.20.14:675][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.07.12-00.20.14:675][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.07.12-00.20.14:675][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.07.12-00.20.14:675][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.07.12-00.20.14:675][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.07.12-00.20.14:676][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.07.12-00.20.14:676][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.07.12-00.20.14:676][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.07.12-00.20.14:676][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.07.12-00.20.14:677][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.07.12-00.20.14:677][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.07.12-00.20.14:677][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.07.12-00.20.14:677][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.07.12-00.20.14:678][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.07.12-00.20.14:678][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.07.12-00.20.14:678][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.07.12-00.20.14:678][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.07.12-00.20.14:679][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.07.12-00.20.14:679][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.07.12-00.20.14:679][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.07.12-00.20.14:679][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.07.12-00.20.14:679][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.07.12-00.20.14:680][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.07.12-00.20.14:680][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.07.12-00.20.14:680][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.07.12-00.20.14:680][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:681][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.07.12-00.20.14:681][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.07.12-00.20.14:681][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.07.12-00.20.14:681][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.07.12-00.20.14:682][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.07.12-00.20.14:682][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.07.12-00.20.14:682][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.07.12-00.20.14:682][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.07.12-00.20.14:683][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.07.12-00.20.14:683][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:683][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.07.12-00.20.14:683][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.07.12-00.20.14:683][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.07.12-00.20.14:684][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.07.12-00.20.14:686][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.07.12-00.20.14:686][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.07.12-00.20.14:687][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.07.12-00.20.14:687][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.07.12-00.20.14:687][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.07.12-00.20.14:688][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.07.12-00.20.14:688][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.07.12-00.20.14:688][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.07.12-00.20.14:688][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.07.12-00.20.14:688][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.07.12-00.20.14:689][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.07.12-00.20.14:689][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.07.12-00.20.14:689][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.07.12-00.20.14:689][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.07.12-00.20.14:690][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.07.12-00.20.14:690][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.07.12-00.20.14:690][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.07.12-00.20.14:690][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.07.12-00.20.14:691][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.07.12-00.20.14:691][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.07.12-00.20.14:691][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.07.12-00.20.14:691][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.07.12-00.20.14:692][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.07.12-00.20.14:692][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.07.12-00.20.14:692][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.07.12-00.20.14:692][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:692][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.07.12-00.20.14:693][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.07.12-00.20.14:693][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.07.12-00.20.14:693][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.07.12-00.20.14:693][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.07.12-00.20.14:694][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.07.12-00.20.14:694][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.07.12-00.20.14:694][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.07.12-00.20.14:694][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.07.12-00.20.14:695][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.07.12-00.20.14:695][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../MDS_Networking/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.07.12-00.20.14:695][  0]LogInit: Computer: DESKTOP-4S98TJ0
+[2022.07.12-00.20.14:695][  0]LogInit: User: User
+[2022.07.12-00.20.14:695][  0]LogInit: CPU Page size=4096, Cores=4
+[2022.07.12-00.20.14:696][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.07.12-00.20.14:696][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.07.12-00.20.14:696][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2022.07.12-00.20.14:696][  0]LogMemory: Process Physical Memory: 78.29 MB used, 78.29 MB peak
+[2022.07.12-00.20.14:697][  0]LogMemory: Process Virtual Memory: 80.37 MB used, 80.37 MB peak
+[2022.07.12-00.20.14:697][  0]LogMemory: Physical Memory: 6022.63 MB used,  10305.64 MB free, 16328.27 MB total
+[2022.07.12-00.20.14:697][  0]LogMemory: Virtual Memory: 134209632.00 MB used,  8098.25 MB free, 134217728.00 MB total
+[2022.07.12-00.20.14:701][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.07.12-00.20.14:858][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.07.12-00.20.14:858][  0]LogInit: Using OS detected language (en-US).
+[2022.07.12-00.20.14:859][  0]LogInit: Using OS detected locale (en-NZ).
+[2022.07.12-00.20.14:860][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.07.12-00.20.14:885][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.07.12-00.20.14:898][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.07.12-00.20.14:898][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.07.12-00.20.14:934][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+[2022.07.12-00.20.14:936][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.07.12-00.20.14:936][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.07.12-00.20.14:937][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.07.12-00.20.14:937][  0]LogD3D11RHI: D3D11 adapters:
+[2022.07.12-00.20.14:990][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7700 Series' (Feature Level 11_0)
+[2022.07.12-00.20.14:990][  0]LogD3D11RHI:       1003/0/8164 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2022.07.12-00.20.14:993][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.07.12-00.20.14:993][  0]LogD3D11RHI:       0/0/8164 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.07.12-00.20.14:994][  0]LogD3D11RHI: Chosen D3D11 Adapter:
+[2022.07.12-00.20.14:994][  0]LogD3D11RHI:     Description : AMD Radeon HD 7700 Series
+[2022.07.12-00.20.14:994][  0]LogD3D11RHI:     VendorId    : 1002
+[2022.07.12-00.20.14:994][  0]LogD3D11RHI:     DeviceId    : 683d
+[2022.07.12-00.20.14:995][  0]LogD3D11RHI:     SubSysId    : 4291043
+[2022.07.12-00.20.14:995][  0]LogD3D11RHI:     Revision    : 0000
+[2022.07.12-00.20.14:995][  0]LogD3D11RHI:     DedicatedVideoMemory : 1052459008 bytes
+[2022.07.12-00.20.14:995][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2022.07.12-00.20.14:996][  0]LogD3D11RHI:     SharedSystemMemory : 8560715776 bytes
+[2022.07.12-00.20.14:996][  0]LogD3D11RHI:     AdapterLuid : 0 36411
+[2022.07.12-00.20.15:000][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.07.12-00.20.15:001][  0]LogD3D11RHI:     GPU DeviceId: 0x683d (for the marketing name, search the web for "GPU Device Id")
+[2022.07.12-00.20.15:001][  0]LogWindows: EnumDisplayDevices:
+[2022.07.12-00.20.15:001][  0]LogWindows:    0. 'AMD Radeon HD 7700 Series' (P:1 D:1)
+[2022.07.12-00.20.15:002][  0]LogWindows:    1. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:002][  0]LogWindows:    2. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:003][  0]LogWindows:    3. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:003][  0]LogWindows:    4. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:003][  0]LogWindows:    5. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:004][  0]LogWindows:    6. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:004][  0]LogWindows:    7. 'AMD Radeon HD 7700 Series' (P:0 D:0)
+[2022.07.12-00.20.15:004][  0]LogWindows: DebugString: FoundDriverCount:8 
+[2022.07.12-00.20.15:004][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7700 Series
+[2022.07.12-00.20.15:005][  0]LogD3D11RHI:   Driver Version: Adrenalin 2020 21.5.1 (internal:27.20.21003.1028, unified:27.20.21003.1028)
+[2022.07.12-00.20.15:005][  0]LogD3D11RHI:      Driver Date: 4-30-2021
+[2022.07.12-00.20.15:005][  0]LogRHI: Texture pool is 597 MB (70% of 853 MB)
+[2022.07.12-00.20.15:025][  0]LogD3D11RHI: Creating D3DDevice with AMD AGS, using adapter:
+[2022.07.12-00.20.15:026][  0]LogD3D11RHI:     Description : AMD Radeon HD 7700 Series
+[2022.07.12-00.20.15:026][  0]LogD3D11RHI:     VendorId    : 1002
+[2022.07.12-00.20.15:026][  0]LogD3D11RHI:     DeviceId    : 683d
+[2022.07.12-00.20.15:026][  0]LogD3D11RHI:     SubSysId    : 4291043
+[2022.07.12-00.20.15:027][  0]LogD3D11RHI:     Revision    : 0000
+[2022.07.12-00.20.15:027][  0]LogD3D11RHI:     DedicatedVideoMemory : 1052459008 bytes
+[2022.07.12-00.20.15:027][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2022.07.12-00.20.15:027][  0]LogD3D11RHI:     SharedSystemMemory : 8560715776 bytes
+[2022.07.12-00.20.15:028][  0]LogD3D11RHI:     AdapterLuid : 0 36411
+[2022.07.12-00.20.15:062][  0]LogD3D11RHI: Created device via AGS, feature level 11_0, supported extensions 1fffffbf.
+[2022.07.12-00.20.15:063][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.07.12-00.20.15:063][  0]LogD3D11RHI: Async texture creation enabled
+[2022.07.12-00.20.15:064][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.07.12-00.20.15:082][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2022.07.12-00.20.15:094][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.07.12-00.20.15:097][  0]LogShaderLibrary: Display: Using ../../../MDS_Networking/Content/ShaderArchive-Global-PCD3D_SM5.ushaderbytecode for material shader code. Total 1951 unique shaders.
+[2022.07.12-00.20.15:097][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2022.07.12-00.20.15:097][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created, components 1
+[2022.07.12-00.20.15:098][  0]LogTemp: Warning: Clearing the OS Cache
+[2022.07.12-00.20.15:098][  0]LogODSC: ODSC Thread active.
+[2022.07.12-00.20.15:103][  0]LogPakFile: New pak file ../../../MDS_Networking/Content/Paks/MDS_Networking-WindowsNoEditor.pak added to pak precacher.
+[2022.07.12-00.20.15:124][  0]LogSlate: Using FreeType 2.10.0
+[2022.07.12-00.20.15:124][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.07.12-00.20.15:174][  0]LogShaderLibrary: Display: Using ../../../MDS_Networking/Content/ShaderArchive-MDS_Networking-PCD3D_SM5.ushaderbytecode for material shader code. Total 1564 unique shaders.
+[2022.07.12-00.20.15:175][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library MDS_Networking
+[2022.07.12-00.20.15:176][  0]LogShaderLibrary: Display: Logical shader library 'MDS_Networking' has been created, components 1
+[2022.07.12-00.20.15:176][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2022.07.12-00.20.15:177][  0]LogShaderLibrary: Display: Using ../../../MDS_Networking/Content/ShaderArchive-MDS_Networking-PCD3D_SM5.ushaderbytecode for material shader code. Total 1564 unique shaders.
+[2022.07.12-00.20.15:177][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library MDS_Networking
+[2022.07.12-00.20.15:178][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2022.07.12-00.20.15:178][  0]LogRHI: Display: Failed to open default shader pipeline cache for MDS_Networking using shader platform 0.
+[2022.07.12-00.20.15:178][  0]LogInit: Using OS detected language (en-US).
+[2022.07.12-00.20.15:179][  0]LogInit: Using OS detected locale (en-NZ).
+[2022.07.12-00.20.15:179][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.07.12-00.20.15:179][  0]LogTextLocalizationManager: No localization for 'en-NZ' exists, so 'en' will be used for the locale.
+[2022.07.12-00.20.15:180][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2022.07.12-00.20.15:180][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2022.07.12-00.20.15:182][  0]LogTextLocalizationManager: Compacting localization data took   1.18ms
+[2022.07.12-00.20.15:182][  0]LogAssetRegistry: FAssetRegistry took 0.0013 seconds to start up
+[2022.07.12-00.20.15:262][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.07.12-00.20.15:263][  0]LogPackageLocalizationCache: Processed 26 localized package path(s) for 1 prioritized culture(s) in 0.000070 seconds
+[2022.07.12-00.20.15:270][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2022.07.12-00.20.15:270][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2022.07.12-00.20.15:271][  0]LogInit: Active device profile: [0000018D377707C0][0000018D2B11DB70 49] WindowsNoEditor
+[2022.07.12-00.20.15:271][  0]LogInit: Profiles: [0000018D37770AC0][0000018D34E20010 49] Windows, [0000018D377707C0][0000018D2B11DB70 49] WindowsNoEditor, 
+[2022.07.12-00.20.15:287][  0]LogNetVersion: MDS_Networking 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 1846999902)
+[2022.07.12-00.20.15:330][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.07.12-00.20.15:330][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.07.12-00.20.15:332][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.07.12-00.20.15:348][  0]LogActor: Warning: SetReplicates called on non-initialized actor Default__MDS_NetworkingMovingPlatform. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:349][  0]LogActor: Warning: SetReplicates called on non-initialized actor Default__MDS_NetworkingObjective. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:349][  0]LogTemp: Warning: [MDS_NetworkingPlayerController] found Subsystem NULL
+[2022.07.12-00.20.15:382][  0]LogMoviePlayer: Initializing movie player
+[2022.07.12-00.20.15:383][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: C2EAC4D646096127FF8960A6A9D35F3C | Instance: A6EFDEB442C9F362084C9FA33274227B (DESKTOP-4S98TJ0-8744).
+[2022.07.12-00.20.15:384][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.07.12-00.20.15:384][  0]LogOcInput: OculusInput pre-init called
+[2022.07.12-00.20.15:388][  0]LogUObjectArray: 15994 objects as part of root set at end of initial load.
+[2022.07.12-00.20.15:389][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2022.07.12-00.20.15:389][  0]LogUObjectAllocator: 3337800 out of 0 bytes used by permanent object pool.
+[2022.07.12-00.20.15:389][  0]LogUObjectArray: CloseDisregardForGC: 15994/15994 objects in disregard for GC pool
+[2022.07.12-00.20.15:390][  0]LogEngine: Initializing Engine...
+[2022.07.12-00.20.15:438][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2022.07.12-00.20.15:438][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.07.12-00.20.15:441][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.07.12-00.20.15:511][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.07.12-00.20.15:511][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.07.12-00.20.15:513][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2022.07.12-00.20.15:514][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2022.07.12-00.20.15:514][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.07.12-00.20.15:514][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.07.12-00.20.15:514][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.07.12-00.20.15:514][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.07.12-00.20.15:515][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.07.12-00.20.15:515][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.07.12-00.20.15:515][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.07.12-00.20.15:516][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.07.12-00.20.15:516][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.07.12-00.20.15:516][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.07.12-00.20.15:516][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.07.12-00.20.15:517][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.07.12-00.20.15:517][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.07.12-00.20.15:517][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.07.12-00.20.15:586][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.07.12-00.20.15:593][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.07.12-00.20.15:593][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.07.12-00.20.15:621][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.07.12-00.20.15:622][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.07.12-00.20.15:624][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.07.12-00.20.15:624][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.07.12-00.20.15:626][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.07.12-00.20.15:627][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.07.12-00.20.15:627][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.07.12-00.20.15:628][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.07.12-00.20.15:628][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.07.12-00.20.15:629][  0]LogInit: FAudioDevice initialized.
+[2022.07.12-00.20.15:631][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.07.12-00.20.15:631][  0]LogInit: Texture streaming: Enabled
+[2022.07.12-00.20.15:653][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.07.12-00.20.15:653][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.07.12-00.20.15:654][  0]LogInit: Display: Game Engine Initialized.
+[2022.07.12-00.20.15:654][  0]LogInit: Display: Starting Game.
+[2022.07.12-00.20.15:655][  0]LogNet: Browse: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap?Name=Player
+[2022.07.12-00.20.15:655][  0]LogLoad: LoadMap: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap?Name=Player
+[2022.07.12-00.20.15:655][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2022.07.12-00.20.15:657][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.07.12-00.20.15:657][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.12-00.20.15:660][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.07.12-00.20.15:662][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2022.07.12-00.20.15:668][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform10_34. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:668][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform11_35. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:669][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform12_36. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:669][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform13_37. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:670][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform14_38. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:670][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform15_39. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:670][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform16_40. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:671][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform17_57. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:671][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform18_58. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:671][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform19_59. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:672][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:672][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform20_60. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:672][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform21_61. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:672][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform22_62. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:673][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform23_63. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:673][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform24_64. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:673][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform25_65. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:674][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform26_66. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:674][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform27_67. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:674][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform28_68. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:675][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform29_69. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:675][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform30_70. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:675][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform31_71. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:676][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform32_72. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:676][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform33_105. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:676][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform34_106. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:677][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform35_107. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:679][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform36_108. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:679][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform37_109. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:680][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform38_110. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:682][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform39_111. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:682][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform3_15. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:682][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform40_112. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:683][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform41_113. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:683][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform42_114. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:684][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform43_115. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:684][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform44_116. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:684][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform45_117. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:685][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform46_118. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:685][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform47_119. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:685][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform48_120. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:685][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform49_121. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:686][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform4_16. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:686][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform50_122. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:686][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform51_123. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:687][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform52_124. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:687][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform53_125. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:687][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform54_126. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:688][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform55_127. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:688][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform56_128. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:688][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform57_129. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:689][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform58_130. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:689][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform59_131. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:689][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform5_21. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:690][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform60_132. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:690][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform61_133. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:690][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform62_134. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:690][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform63_135. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:691][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform64_136. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:691][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform6_22. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:691][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform7_23. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:692][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform8_24. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:692][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform9_33. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:692][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingMovingPlatform_4. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:693][  0]LogActor: Warning: SetReplicates called on non-initialized actor MDS_NetworkingObjective_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.07.12-00.20.15:714][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'FirstPersonExampleMap'.
+[2022.07.12-00.20.15:716][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2022.07.12-00.20.15:719][  0]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2022.07.12-00.20.15:726][  0]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2022.07.12-12.20.15
+[2022.07.12-00.20.15:726][  0]LogWorld: Bringing up level for play took: 0.006053
+[2022.07.12-00.20.15:727][  0]LogTemp: Warning: [MDS_NetworkingPlayerController] found Subsystem NULL
+[2022.07.12-00.20.15:732][  0]LogLoad: Took 0.077699 seconds to LoadMap(/Game/FirstPersonCPP/Maps/FirstPersonExampleMap)
+[2022.07.12-00.20.15:733][  0]LogSlate: Took 0.000493 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2022.07.12-00.20.15:754][  0]LogSlate: Took 0.000782 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.07.12-00.20.15:767][  0]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:1).
+[2022.07.12-00.20.15:767][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2022.07.12-00.20.15:768][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=218660, PathHashSize=16, EntriesSize=32752, TotalSize=251428
+[2022.07.12-00.20.15:768][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2022.07.12-00.20.15:768][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2022.07.12-00.20.15:768][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.07.12-00.20.15:769][  0]LogLoad: (Engine Initialization) Total time: 3.70 seconds
+[2022.07.12-00.20.15:814][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.07.12-00.20.15:817][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.12-00.20.15:902][  0]LogRenderer: Reallocating scene render targets to support 128x128 Format 10 NumSamples 1 (Frame:1).
+[2022.07.12-00.20.15:941][  0]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:2).
+[2022.07.12-00.20.15:992][  0]LogSlate: Slate font cache was flushed
+[2022.07.12-00.20.15:995][  1]LogSlate: Took 0.000356 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.07.12-00.20.15:996][  1]LogSlate: Took 0.000492 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2022.07.12-00.20.39:837][ 65]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.20.40:099][ 76]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.20.42:281][165]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.20.42:497][174]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.21.01:640][839]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.21.09:515][176]LogOnlineSession: Warning: OSS: Ignoring game search request while one is pending
+[2022.07.12-00.21.24:768][838]LogSlate: Request Window 'MDS_Networking (64-bit Development PCD3D_SM5) ' being destroyed
+[2022.07.12-00.21.24:826][838]LogSlate: Window 'MDS_Networking (64-bit Development PCD3D_SM5) ' being destroyed
+[2022.07.12-00.21.24:827][838]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.07.12-00.21.24:829][838]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.07.12-00.21.24:829][838]LogEngine: All Windows Closed
+[2022.07.12-00.21.24:830][838]LogWindows: FPlatformMisc::RequestExit(0)
+[2022.07.12-00.21.24:831][838]LogWindows: FPlatformMisc::RequestExitWithStatus(0, 0)
+[2022.07.12-00.21.24:832][838]LogCore: Engine exit requested (reason: Win RequestExit)
+[2022.07.12-00.21.24:833][839]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2022.07.12-00.21.24:834][839]LogInit: Display: PreExit Game.
+[2022.07.12-00.21.24:842][839]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2022.07.12-00.21.24:842][839]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2022.07.12-00.21.24:843][839]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.12-00.21.25:474][839]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2022.07.12-00.21.25:474][839]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2022.07.12-00.21.25:475][839]LogAudio: Display: Audio Device unregistered from world 'FirstPersonExampleMap'.
+[2022.07.12-00.21.25:476][839]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.07.12-00.21.25:476][839]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.07.12-00.21.25:481][839]LogAudio: Display: Audio Device Manager Shutdown
+[2022.07.12-00.21.25:484][839]LogExit: Preparing to exit.
+[2022.07.12-00.21.25:484][839]LogMoviePlayer: Shutting down movie player
+[2022.07.12-00.21.25:488][839]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.07.12-00.21.25:493][839]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2022.07.12-00.21.25:494][839]LogExit: Game engine shut down
+[2022.07.12-00.21.25:512][839]LogExit: Object subsystem successfully closed.
+[2022.07.12-00.21.25:521][839]LogModuleManager: Shutting down and abandoning module AutomationController (364)
+[2022.07.12-00.21.25:521][839]LogModuleManager: Shutting down and abandoning module AutomationWorker (362)
+[2022.07.12-00.21.25:522][839]LogModuleManager: Shutting down and abandoning module Voice (360)
+[2022.07.12-00.21.25:522][839]LogModuleManager: Shutting down and abandoning module AIModule (358)
+[2022.07.12-00.21.25:522][839]LogModuleManager: Shutting down and abandoning module GameplayDebugger (357)
+[2022.07.12-00.21.25:523][839]LogModuleManager: Shutting down and abandoning module NavigationSystem (355)
+[2022.07.12-00.21.25:523][839]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (352)
+[2022.07.12-00.21.25:523][839]LogModuleManager: Shutting down and abandoning module WebMMedia (350)
+[2022.07.12-00.21.25:523][839]LogModuleManager: Shutting down and abandoning module OpenXRInput (348)
+[2022.07.12-00.21.25:524][839]LogModuleManager: Shutting down and abandoning module OculusMR (346)
+[2022.07.12-00.21.25:524][839]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (344)
+[2022.07.12-00.21.25:524][839]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (342)
+[2022.07.12-00.21.25:524][839]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (340)
+[2022.07.12-00.21.25:525][839]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (338)
+[2022.07.12-00.21.25:525][839]LogModuleManager: Shutting down and abandoning module CharacterAI (336)
+[2022.07.12-00.21.25:525][839]LogModuleManager: Shutting down and abandoning module PlanarCut (334)
+[2022.07.12-00.21.25:525][839]LogModuleManager: Shutting down and abandoning module SessionServices (332)
+[2022.07.12-00.21.25:526][839]LogModuleManager: Shutting down and abandoning module LiveCoding (330)
+[2022.07.12-00.21.25:526][839]LogModuleManager: Shutting down and abandoning module LevelSequence (328)
+[2022.07.12-00.21.25:526][839]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (326)
+[2022.07.12-00.21.25:526][839]LogModuleManager: Shutting down and abandoning module MovieScene (324)
+[2022.07.12-00.21.25:526][839]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2022.07.12-00.21.25:527][839]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (320)
+[2022.07.12-00.21.25:527][839]LogModuleManager: Shutting down and abandoning module AudioMixerCore (319)
+[2022.07.12-00.21.25:527][839]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (316)
+[2022.07.12-00.21.25:527][839]LogModuleManager: Shutting down and abandoning module ProfilerService (314)
+[2022.07.12-00.21.25:534][839]LogModuleManager: Shutting down and abandoning module TaskGraph (312)
+[2022.07.12-00.21.25:536][839]LogModuleManager: Shutting down and abandoning module Synthesis (310)
+[2022.07.12-00.21.25:536][839]LogModuleManager: Shutting down and abandoning module TakeMovieScene (308)
+[2022.07.12-00.21.25:536][839]LogModuleManager: Shutting down and abandoning module LiveLinkMovieScene (306)
+[2022.07.12-00.21.25:537][839]LogModuleManager: Shutting down and abandoning module LiveLinkComponents (304)
+[2022.07.12-00.21.25:537][839]LogModuleManager: Shutting down and abandoning module LiveLink (302)
+[2022.07.12-00.21.26:419][839]LogModuleManager: Shutting down and abandoning module OculusInput (300)
+[2022.07.12-00.21.26:419][839]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (298)
+[2022.07.12-00.21.26:420][839]LogModuleManager: Shutting down and abandoning module GooglePAD (296)
+[2022.07.12-00.21.26:420][839]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (294)
+[2022.07.12-00.21.26:421][839]LogModuleManager: Shutting down and abandoning module CableComponent (292)
+[2022.07.12-00.21.26:421][839]LogModuleManager: Shutting down and abandoning module AudioCapture (290)
+[2022.07.12-00.21.26:421][839]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (289)
+[2022.07.12-00.21.26:421][839]LogModuleManager: Shutting down and abandoning module AssetTags (286)
+[2022.07.12-00.21.26:422][839]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2022.07.12-00.21.26:422][839]LogModuleManager: Shutting down and abandoning module AppleImageUtils (282)
+[2022.07.12-00.21.26:422][839]LogModuleManager: Shutting down and abandoning module AndroidPermission (280)
+[2022.07.12-00.21.26:422][839]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (278)
+[2022.07.12-00.21.26:422][839]LogModuleManager: Shutting down and abandoning module MediaCompositing (276)
+[2022.07.12-00.21.26:423][839]LogModuleManager: Shutting down and abandoning module ImgMedia (274)
+[2022.07.12-00.21.26:423][839]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (272)
+[2022.07.12-00.21.26:423][839]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (270)
+[2022.07.12-00.21.26:423][839]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (268)
+[2022.07.12-00.21.26:424][839]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (266)
+[2022.07.12-00.21.26:424][839]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (264)
+[2022.07.12-00.21.26:424][839]LogModuleManager: Shutting down and abandoning module OpenImageDenoise (262)
+[2022.07.12-00.21.26:424][839]LogModuleManager: Shutting down and abandoning module MotoSynth (260)
+[2022.07.12-00.21.26:425][839]LogModuleManager: Shutting down and abandoning module ChaosNiagara (258)
+[2022.07.12-00.21.26:425][839]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (256)
+[2022.07.12-00.21.26:425][839]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (254)
+[2022.07.12-00.21.26:425][839]LogModuleManager: Shutting down and abandoning module EditableMesh (252)
+[2022.07.12-00.21.26:426][839]LogModuleManager: Shutting down and abandoning module MeshConversion (250)
+[2022.07.12-00.21.26:426][839]LogModuleManager: Shutting down and abandoning module DynamicMesh (248)
+[2022.07.12-00.21.26:426][839]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (246)
+[2022.07.12-00.21.26:426][839]LogModuleManager: Shutting down and abandoning module GeometricObjects (244)
+[2022.07.12-00.21.26:426][839]LogModuleManager: Shutting down and abandoning module BackChannel (242)
+[2022.07.12-00.21.26:427][839]LogModuleManager: Shutting down and abandoning module AutomationUtils (240)
+[2022.07.12-00.21.26:427][839]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (238)
+[2022.07.12-00.21.26:428][839]LogModuleManager: Shutting down and abandoning module GeometryCache (236)
+[2022.07.12-00.21.26:428][839]LogModuleManager: Shutting down and abandoning module UObjectPlugin (234)
+[2022.07.12-00.21.26:428][839]LogModuleManager: Shutting down and abandoning module OodleNetworkHandlerComponent (232)
+[2022.07.12-00.21.26:429][839]LogModuleManager: Shutting down and abandoning module TemplateSequence (230)
+[2022.07.12-00.21.26:429][839]LogModuleManager: Shutting down and abandoning module MDS_Networking (228)
+[2022.07.12-00.21.26:429][839]LogModuleManager: Shutting down and abandoning module AudioSynesthesia (226)
+[2022.07.12-00.21.26:429][839]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaCore (224)
+[2022.07.12-00.21.26:429][839]LogModuleManager: Shutting down and abandoning module SoundFields (222)
+[2022.07.12-00.21.26:430][839]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (220)
+[2022.07.12-00.21.26:430][839]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2022.07.12-00.21.26:430][839]LogModuleManager: Shutting down and abandoning module ActorSequence (214)
+[2022.07.12-00.21.26:430][839]LogModuleManager: Shutting down and abandoning module UdpMessaging (212)
+[2022.07.12-00.21.26:431][839]LogModuleManager: Shutting down and abandoning module TcpMessaging (210)
+[2022.07.12-00.21.26:431][839]LogModuleManager: Shutting down and abandoning module ImgMediaEngine (208)
+[2022.07.12-00.21.26:431][839]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (206)
+[2022.07.12-00.21.26:431][839]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (204)
+[2022.07.12-00.21.26:432][839]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (202)
+[2022.07.12-00.21.26:432][839]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (200)
+[2022.07.12-00.21.26:432][839]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (198)
+[2022.07.12-00.21.26:432][839]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (196)
+[2022.07.12-00.21.26:432][839]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (194)
+[2022.07.12-00.21.26:433][839]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (192)
+[2022.07.12-00.21.26:433][839]LogModuleManager: Shutting down and abandoning module MagicLeapController (190)
+[2022.07.12-00.21.26:433][839]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (188)
+[2022.07.12-00.21.26:433][839]LogModuleManager: Shutting down and abandoning module MagicLeapAR (186)
+[2022.07.12-00.21.26:434][839]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (184)
+[2022.07.12-00.21.26:436][839]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (182)
+[2022.07.12-00.21.26:436][839]LogModuleManager: Shutting down and abandoning module Niagara (180)
+[2022.07.12-00.21.26:437][839]LogModuleManager: Shutting down and abandoning module SignalProcessing (179)
+[2022.07.12-00.21.26:437][839]LogModuleManager: Shutting down and abandoning module NiagaraCore (176)
+[2022.07.12-00.21.26:437][839]LogModuleManager: Shutting down and abandoning module FacialAnimation (174)
+[2022.07.12-00.21.26:437][839]LogModuleManager: Shutting down and abandoning module SignificanceManager (172)
+[2022.07.12-00.21.26:438][839]LogModuleManager: Shutting down and abandoning module AnimationSharing (170)
+[2022.07.12-00.21.26:438][839]LogModuleManager: Shutting down and abandoning module GameplayCameras (168)
+[2022.07.12-00.21.26:438][839]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (166)
+[2022.07.12-00.21.26:438][839]LogModuleManager: Shutting down and abandoning module Paper2D (164)
+[2022.07.12-00.21.26:439][839]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (162)
+[2022.07.12-00.21.26:440][839]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (160)
+[2022.07.12-00.21.26:440][839]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (158)
+[2022.07.12-00.21.26:440][839]LogModuleManager: Shutting down and abandoning module PacketHandler (156)
+[2022.07.12-00.21.26:440][839]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (154)
+[2022.07.12-00.21.26:440][839]LogModuleManager: Shutting down and abandoning module MediaAssets (152)
+[2022.07.12-00.21.26:441][839]LogModuleManager: Shutting down and abandoning module Overlay (150)
+[2022.07.12-00.21.26:441][839]LogModuleManager: Shutting down and abandoning module FunctionalTesting (148)
+[2022.07.12-00.21.26:441][839]LogModuleManager: Shutting down and abandoning module MessageLog (146)
+[2022.07.12-00.21.26:442][839]LogModuleManager: Shutting down and abandoning module UMG (144)
+[2022.07.12-00.21.26:442][839]LogModuleManager: Shutting down and abandoning module SlateReflector (142)
+[2022.07.12-00.21.26:442][839]LogModuleManager: Shutting down and abandoning module Slate (140)
+[2022.07.12-00.21.26:442][839]LogModuleManager: Shutting down and abandoning module SlateCore (138)
+[2022.07.12-00.21.26:443][839]LogModuleManager: Shutting down and abandoning module MRMesh (136)
+[2022.07.12-00.21.26:444][839]LogModuleManager: Shutting down and abandoning module Messaging (134)
+[2022.07.12-00.21.26:444][839]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (132)
+[2022.07.12-00.21.26:444][839]LogModuleManager: Shutting down and abandoning module XAudio2 (130)
+[2022.07.12-00.21.26:445][839]LogModuleManager: Shutting down and abandoning module Networking (128)
+[2022.07.12-00.21.26:445][839]LogModuleManager: Shutting down and abandoning module Core (126)
+[2022.07.12-00.21.26:446][839]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (124)
+[2022.07.12-00.21.26:446][839]LogModuleManager: Shutting down and abandoning module ImageWrapper (120)
+[2022.07.12-00.21.26:446][839]LogModuleManager: Shutting down and abandoning module D3D11RHI (118)
+[2022.07.12-00.21.26:447][839]LogModuleManager: Shutting down and abandoning module InputCore (116)
+[2022.07.12-00.21.26:447][839]LogModuleManager: Shutting down and abandoning module Settings (114)
+[2022.07.12-00.21.26:447][839]LogModuleManager: Shutting down and abandoning module PhysXCooking (112)
+[2022.07.12-00.21.26:447][839]LogModuleManager: Shutting down and abandoning module Chaos (110)
+[2022.07.12-00.21.26:448][839]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (108)
+[2022.07.12-00.21.26:448][839]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (107)
+[2022.07.12-00.21.26:448][839]LogModuleManager: Shutting down and abandoning module AVEncoder (106)
+[2022.07.12-00.21.26:448][839]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (102)
+[2022.07.12-00.21.26:449][839]LogModuleManager: Shutting down and abandoning module SteamVRInput (100)
+[2022.07.12-00.21.26:449][839]LogModuleManager: Shutting down and abandoning module SteamVR (98)
+[2022.07.12-00.21.26:449][839]LogHMD: Freeing OpenVRDLLHandle.
+[2022.07.12-00.21.26:449][839]LogModuleManager: Shutting down and abandoning module OpenXRHandTracking (96)
+[2022.07.12-00.21.26:450][839]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2022.07.12-00.21.26:462][839]LogModuleManager: Shutting down and abandoning module OpenXRAR (94)
+[2022.07.12-00.21.26:462][839]LogModuleManager: Shutting down and abandoning module AugmentedReality (93)
+[2022.07.12-00.21.26:462][839]LogModuleManager: Shutting down and abandoning module OpenXRHMD (90)
+[2022.07.12-00.21.26:463][839]LogModuleManager: Shutting down and abandoning module OpenXREyeTracker (88)
+[2022.07.12-00.21.26:463][839]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2022.07.12-00.21.26:464][839]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2022.07.12-00.21.26:464][839]LogModuleManager: Shutting down and abandoning module ChunkDownloader (82)
+[2022.07.12-00.21.26:464][839]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (80)
+[2022.07.12-00.21.26:465][839]LogModuleManager: Shutting down and abandoning module WmfMedia (78)
+[2022.07.12-00.21.26:466][839]LogModuleManager: Shutting down and abandoning module Media (77)
+[2022.07.12-00.21.26:467][839]LogModuleManager: Shutting down and abandoning module MediaInfo (76)
+[2022.07.12-00.21.26:467][839]LogModuleManager: Shutting down and abandoning module ExrReaderGpu (72)
+[2022.07.12-00.21.26:468][839]LogModuleManager: Shutting down and abandoning module MLSDK (70)
+[2022.07.12-00.21.26:469][839]LogModuleManager: Shutting down and abandoning module MagicLeap (68)
+[2022.07.12-00.21.26:469][839]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (66)
+[2022.07.12-00.21.26:469][839]LogModuleManager: Shutting down and abandoning module NiagaraShader (64)
+[2022.07.12-00.21.26:470][839]LogModuleManager: Shutting down and abandoning module ChaosCloth (62)
+[2022.07.12-00.21.26:470][839]LogModuleManager: Shutting down and abandoning module VariantManagerContent (60)
+[2022.07.12-00.21.26:470][839]LogModuleManager: Shutting down and abandoning module DatasmithContent (58)
+[2022.07.12-00.21.26:471][839]LogModuleManager: Shutting down and abandoning module PixWinPlugin (56)
+[2022.07.12-00.21.26:471][839]LogModuleManager: Shutting down and abandoning module AISupportModule (54)
+[2022.07.12-00.21.26:471][839]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (50)
+[2022.07.12-00.21.26:472][839]LogModuleManager: Shutting down and abandoning module SteamShared (44)
+[2022.07.12-00.21.26:472][839]LogSteamShared: Freeing the Steam Loaded Modules...
+[2022.07.12-00.21.26:472][839]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2022.07.12-00.21.26:473][839]LogHttp: Display: cleaning up 0 outstanding Http requests.
+[2022.07.12-00.21.26:496][839]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2022.07.12-00.21.26:496][839]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (36)
+[2022.07.12-00.21.26:497][839]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (34)
+[2022.07.12-00.21.26:497][839]LogModuleManager: Shutting down and abandoning module PlatformCrypto (32)
+[2022.07.12-00.21.26:498][839]LogModuleManager: Shutting down and abandoning module PythonScriptPluginPreload (30)
+[2022.07.12-00.21.26:498][839]LogModuleManager: Shutting down and abandoning module OodleDataCompressionFormat (28)
+[2022.07.12-00.21.26:498][839]LogModuleManager: Shutting down and abandoning module RenderCore (26)
+[2022.07.12-00.21.26:499][839]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2022.07.12-00.21.26:499][839]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2022.07.12-00.21.26:500][839]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2022.07.12-00.21.26:500][839]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2022.07.12-00.21.26:501][839]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2022.07.12-00.21.26:501][839]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2022.07.12-00.21.26:501][839]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2022.07.12-00.21.26:501][839]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2022.07.12-00.21.26:502][839]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2022.07.12-00.21.26:502][839]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2022.07.12-00.21.26:503][839]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2022.07.12-00.21.26:505][839]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2022.07.12-00.21.26:505][839]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2022.07.12-00.21.26:509][839]LogD3D11RHI: Shutdown
+[2022.07.12-00.21.26:509][839]LogD3D11RHI: CleanupD3DDevice
+[2022.07.12-00.21.26:512][839]LogExit: Exiting.
+[2022.07.12-00.21.26:518][839]Log file closed, 07/12/22 12:21:26

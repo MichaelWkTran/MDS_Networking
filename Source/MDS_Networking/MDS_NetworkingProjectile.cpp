@@ -33,7 +33,7 @@ AMDS_NetworkingProjectile::AMDS_NetworkingProjectile()
 		InitialLifeSpan = 3.0f;
 
 		//Replicate Propreties
-		SetReplicates(true);
+		bReplicates = true;
 	}
 }
 
