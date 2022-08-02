@@ -20,16 +20,18 @@ AMDS_NetworkingPlayerController::AMDS_NetworkingPlayerController()
 void AMDS_NetworkingPlayerController::OnLoginCompleteDelegate(int32 _i32LocalUserNum, bool _bWasSuccessful, const FUniqueNetId& _UserID, const FString& _Error)
 {
 	IOnlineIdentityPtr pIdentity = Online::GetIdentityInterface();
-	if (!pIdentity.IsValid()) return;
-	
-	ULocalPlayer* pLocalPlayer = Cast<ULocalPlayer>(Player);
-	if (pLocalPlayer != NULL)
+	if (!pIdentity.IsValid())
 	{
-		FUniqueNetIdRepl UniqueId = PlayerState->GetUniqueId();
-		UniqueId.SetUniqueNetId(FUniqueNetIdWrapper(_UserID).GetUniqueNetId());
+		//Get Local Player
+		ULocalPlayer* pLocalPlayer = Cast<ULocalPlayer>(Player);
+		if (pLocalPlayer == NULL) return;
+		
+		//Get Unique ID
+		FUniqueNetIdRepl UniqueID = PlayerState->GetUniqueId();
+		UniqueID.SetUniqueNetId(FUniqueNetIdWrapper(_UserID).GetUniqueNetId());
 
 		//Set User Net ID to PlayerState
-		PlayerState->SetUniqueId(UniqueId);
+		PlayerState->SetUniqueId(UniqueID);
 
 		//Check Login Status
 		int iControllerID = pLocalPlayer->GetControllerId();
@@ -70,7 +72,7 @@ void AMDS_NetworkingPlayerController::OnFindSessionsCompleteDelegate(bool _bWasS
 		{
 			//Call the session join process if the search is successful
 			const TCHAR* pSessionID = *pSearchSettings->SearchResults[0].GetSessionIdStr();
-			DISPLAY_LOG("FOUND SESSION ID : %s", *pSessionID);
+			//DISPLAY_LOG("FOUND SESSION ID : %s", *pSessionID);
 			JoinSession(pSearchSettings->SearchResults[0]);
 		}
 	}
@@ -100,10 +102,10 @@ void AMDS_NetworkingPlayerController::JoinSession(FOnlineSessionSearchResult Sea
 		);
 
 		//Specify a user to join the session
-		TSharedPtr<const FUniqueNetId> uniqueNetIdPtr = GetLocalPlayer()->GetPreferredUniqueNetId().GetUniqueNetId(); 
+		TSharedPtr<const FUniqueNetId> pNetID = GetLocalPlayer()->GetPreferredUniqueNetId().GetUniqueNetId(); 
 		
 		//Call JoinSession on the Sessionlnterface
-		pSession->JoinSession(*uniqueNetIdPtr, SESSION_NAME, SearchResult);
+		pSession->JoinSession(*pNetID, SESSION_NAME, SearchResult);
 		
 		DISPLAY_LOG("JOINING SESSION!!");
 	}
@@ -115,30 +117,29 @@ void AMDS_NetworkingPlayerController::JoinSession(FOnlineSessionSearchResult Sea
 
 void AMDS_NetworkingPlayerController::OnJoinSessionCompleteDelegate(FName _SessionName, EOnJoinSessionCompleteResult::Type _Result)
 {
-	IOnlineSubsystem* const subSystem = Online::GetSubsystem(GetWorld());
-	if (subSystem)
-	{
-		IOnlineSessionPtr session = subSystem->GetSessionInterface();
-		if (session.IsValid())
-		{
-			if (_Result == EOnJoinSessionCompleteResult::Success)
-			{
-				//Client Travel to the Server
-				FString connectInfo;
-
-				if (session->GetResolvedConnectString(SESSION_NAME, connectInfo))
-				{
-					//Transition with ClientTravel if you succeed in joining the session
-					UE_LOG_ONLINE_SESSION(Log, TEXT("Joined Session: Travelling to %s"), *connectInfo);
-					AMDS_NetworkingPlayerController::ClientTravel(connectInfo, TRAVEL_Absolute);
-				}
-			}
-		} 
-	}
+	//----------------------------------------------------------
+	const IOnlineSubsystem* pSubSystem = Online::GetSubsystem(GetWorld());
+	if (!pSubSystem) return;
+	
+	//----------------------------------------------------------
+	IOnlineSessionPtr pSession = pSubSystem->GetSessionInterface();
+	if (!pSession.IsValid()) return;
+	
+	//----------------------------------------------------------
+	if (_Result != EOnJoinSessionCompleteResult::Success) return;
+	
+	//Client Travel to the Server
+	FString strConnectInfo;
+	if (!pSession->GetResolvedConnectString(SESSION_NAME, strConnectInfo)) return;
+	
+	//Transition with ClientTravel if you succeed in joining the session
+	UE_LOG_ONLINE_SESSION(Log, TEXT("Joined Session: Travelling to %s"), *strConnectInfo);
+	AMDS_NetworkingPlayerController::ClientTravel(strConnectInfo, TRAVEL_Absolute);
 }
 
 void AMDS_NetworkingPlayerController::Login()
 {
+	//Get SubSystem
 	IOnlineSubsystem* pSubSystem = Online::GetSubsystem(GetWorld());
 	if (!pSubSystem) return;
 	
@@ -151,8 +152,8 @@ void AMDS_NetworkingPlayerController::Login()
 	if (pLocalPlayer == NULL) return;
 	
 	//Get Controller ID and check whether it has already logged in to the subsystem
-	int iControllerId = pLocalPlayer->GetControllerId();
-	if (pIdentity->GetLoginStatus(iControllerId) == ELoginStatus::LoggedIn)
+	int iControllerID = pLocalPlayer->GetControllerId();
+	if (pIdentity->GetLoginStatus(iControllerID) == ELoginStatus::LoggedIn)
 	{
 		DISPLAY_LOG("Already Logged in");
 		return;
@@ -161,7 +162,7 @@ void AMDS_NetworkingPlayerController::Login()
 	//On Login delegate
 	pIdentity->AddOnLoginCompleteDelegate_Handle
 	(
-		iControllerId,
+		iControllerID,
 		FOnLoginCompleteDelegate::CreateUObject
 		(
 			this,
@@ -170,16 +171,17 @@ void AMDS_NetworkingPlayerController::Login()
 	);
 
 	//Controller ID required for auto login
-	pIdentity->AutoLogin(iControllerId);
+	pIdentity->AutoLogin(iControllerID);
 }
 
 bool AMDS_NetworkingPlayerController::HostSession()
 {
-	IOnlineSubsystem* pSubSystem = Online::GetSubsystem(GetWorld());
-	if (!pSubSystem) return false;
+	//Get Subsystem
+	IOnlineSubsystem* pSubsystem = Online::GetSubsystem(GetWorld());
+	if (!pSubsystem) return false;
 	
 	//Get Session Interface
-	IOnlineSessionPtr pSession = pSubSystem->GetSessionInterface();
+	IOnlineSessionPtr pSession = pSubsystem->GetSessionInterface();
 	if (!pSession.IsValid()) return false;
 	
 	//Create Session Settings
@@ -249,8 +251,11 @@ void AMDS_NetworkingPlayerController::FindSession()
 	);
 
 	//Search for sessions by specifying users and search conditions
-	TSharedPtr<const FUniqueNetId> pNetID = GetLocalPlayer()->GetPreferredUniqueNetId().GetUniqueNetId();
-	bool bIsSuccess = pSession->FindSessions(*pNetID, pSearchSettings.ToSharedRef());
+	bool bIsSuccess = pSession->FindSessions
+	(
+		*GetLocalPlayer()->GetPreferredUniqueNetId().GetUniqueNetId(),
+		pSearchSettings.ToSharedRef()
+	);
 }
 
 void AMDS_NetworkingPlayerController::QuitSession()
